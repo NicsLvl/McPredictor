@@ -1,2 +1,6 @@
 api_key.txt
 challenges.txt
+chromedriver
+Archive
+__pycache__
+.DS_Store
