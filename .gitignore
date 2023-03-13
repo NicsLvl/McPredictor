@@ -5,3 +5,4 @@ Archive
 __pycache__
 .DS_Store
 data/one_map_api.txt
+.vscode
