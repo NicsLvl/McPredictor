@@ -4,7 +4,9 @@ import httplib2 as http
 import json
 import requests
 import pandas as pd
+import numpy as np
 from geopy.distance import geodesic
+
 
 class BusStopFile:
 
@@ -152,56 +154,40 @@ class Distance_Data:
 
         return traffic_in, traffic_out
     
-    def traffic_count(self, distance_list, time_list, day_list, mcd_df, bus_df):
-        traffic_type = ['in','out']
-
-        # add empty columns to mcd_df for each i in distance_list, day_list and time_list
-        results_df = pd.DataFrame(columns=[f'{traffic}_{day}_{time}_{distance}' for traffic in traffic_type for day in day_list for time in time_list for distance in distance_list])
-
+    def traffic_count(self, mcd_df, stop_df, bus_data, distance_list):
+        
+        mcd_list = []
         for mcd in range(len(mcd_df)):
+            # create an empty 5082 x 4 numpy array
+            traffic_array = np.zeros((len(stop_df), len(distance_list)))
             
-            # create a temporary dataframe to store filtered rows so it has the same columns as bus_df
-            temp_df = pd.DataFrame(columns=bus_df.columns)
+            for stop in range(len(stop_df)):
+                dist = geodesic((stop_df['latitude'][stop], stop_df['longitude'][stop]), \
+                                (mcd_df['latitude'][mcd], mcd_df['longitude'][mcd])).km
+                if dist<distance_list[0]:
+                    traffic_array[stop,0] = 1
+                    if dist<distance_list[1]:
+                        traffic_array[stop,1] = 1
+                        if dist<distance_list[2]:
+                            traffic_array[stop,2] = 1
+                            if dist<distance_list[3]:
+                                traffic_array[stop,3] = 1
             
-            for stop in range(len(bus_df)):
+            # multiply the 2 arrays to get a 96 x 4 array
+            mcd_array = np.dot(bus_data,traffic_array)
 
-                # calculate the distance between the bus stop and mcd
-                dist = geodesic((bus_df['latitude'][stop], bus_df['longitude'][stop]), \
-                        (mcd_df['latitude'][mcd], mcd_df['longitude'][mcd])).km
-                
-                # if the distance is within the stated amount, include it in the temporary dataframe
-                if dist <= distance_list[-1]:
-                    # add bus_df.iloc[stop,:] to temp_df using concat because append is deprecating
-                    temp_df = pd.concat([temp_df, bus_df.iloc[stop,:].to_frame().transpose()], axis=0)
-                elif dist <= distance_list[1]:
+            # convert mcd_array to a 1 x 384 array by unstacking the rows
+            mcd_array = mcd_array.reshape(1, -1)
 
-            # create a new groupby object with the temp_df and group by day_type and time_per_hour        
-            temp_df = temp_df.groupby(['DAY_TYPE','TIME_PER_HOUR'])[['in','out']].sum()
+            # add it to a list
+            mcd_list.append(mcd_array)
+
+            print(f'Number of arrays in list: {len(mcd_list)}')
+        
+        return mcd_list
             
-            # reset index of temp_df to make all the rows filled with the group by values
-            temp_df.reset_index(inplace=True)
             
-            # melt the df to get the traffic_type, day_type, time_per_hour and traffic_count in 1 row
-            melted_df = pd.melt(temp_df, id_vars=['DAY_TYPE', 'TIME_PER_HOUR'], value_vars=['in','out'], var_name='traffic_type', value_name='traffic_count')
-
-            # create a unique column for each traffic_type + '_' + day_type + '_' + time_per_hour + '_' + distance  and get the traffic_count all in 1 row
-            pivoted_df = melted_df.pivot(index=None, columns=['traffic_type','DAY_TYPE', 'TIME_PER_HOUR'], values='traffic_count')
-            pivoted_df.columns = ['_'.join(map(str, col)).strip() + '_' + str(distance) for col in pivoted_df.columns.values]
-            pivoted_df.index.name = None
-
-            # compress pivoted_df to 1 row based on the sum of the traffic_count in each column
-            pivoted_df = pivoted_df.sum(axis=0).to_frame().transpose()
             
-            # add the pivoted_df to results_df
-            results_df = pd.concat([results_df, pivoted_df], axis=0)
-
-            print(f"Done with Mcdonalds {mcd} for distance {distance}")
-            print(results_df.shape)
-        return results_df
-            
-
-            
-
 class EDA_Data:
 
     def __init__(self, mcd_df):
