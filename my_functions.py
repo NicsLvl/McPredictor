@@ -116,6 +116,39 @@ class Distance_Data:
         
         return self.matrix
     
+    def traffic_count(self, mcd_df, stop_df, bus_data, distance_list):
+        
+        # create an empty numpy array
+        to_df_array = np.empty((0,384))
+
+        for mcd in range(len(mcd_df)):
+            # create an empty 5082 x 4 numpy array
+            traffic_array = np.zeros((len(stop_df), len(distance_list)))
+            
+            for stop in range(len(stop_df)):
+                dist = geodesic((stop_df['latitude'][stop], stop_df['longitude'][stop]), \
+                                (mcd_df['latitude'][mcd], mcd_df['longitude'][mcd])).km
+                if dist<distance_list[0]:
+                    traffic_array[stop,0] = 1
+                    if dist<distance_list[1]:
+                        traffic_array[stop,1] = 1
+                        if dist<distance_list[2]:
+                            traffic_array[stop,2] = 1
+                            if dist<distance_list[3]:
+                                traffic_array[stop,3] = 1
+            
+            # multiply the 2 arrays to get a 96 x 4 array
+            mcd_array = np.dot(bus_data,traffic_array)
+
+            # convert mcd_array to a 1 x 384 array by unstacking the rows
+            mcd_array = mcd_array.reshape(1, -1)
+
+            # add it to the empty array
+            to_df_array = np.append(to_df_array, mcd_array, axis=0)
+            print(f'Number of McDonalds done: {len(to_df_array)}')
+        
+        return to_df_array
+            
     def old_traffic_count(self, distance, mcd_df, bus_df, day_type, time_type):
         filtered_df = bus_df[bus_df['TIME_PER_HOUR']==time_type]
         filtered_df = filtered_df[filtered_df['DAY_TYPE'].isin([day_type])]
@@ -152,41 +185,6 @@ class Distance_Data:
         traffic_out.columns = [f'out_{day_type}_{time_type}_{distance}']
 
         return traffic_in, traffic_out
-    
-    def traffic_count(self, mcd_df, stop_df, bus_data, distance_list):
-        
-        # create an empty numpy array
-        to_df_array = np.empty((0,384))
-
-        for mcd in range(len(mcd_df)):
-            # create an empty 5082 x 4 numpy array
-            traffic_array = np.zeros((len(stop_df), len(distance_list)))
-            
-            for stop in range(len(stop_df)):
-                dist = geodesic((stop_df['latitude'][stop], stop_df['longitude'][stop]), \
-                                (mcd_df['latitude'][mcd], mcd_df['longitude'][mcd])).km
-                if dist<distance_list[0]:
-                    traffic_array[stop,0] = 1
-                    if dist<distance_list[1]:
-                        traffic_array[stop,1] = 1
-                        if dist<distance_list[2]:
-                            traffic_array[stop,2] = 1
-                            if dist<distance_list[3]:
-                                traffic_array[stop,3] = 1
-            
-            # multiply the 2 arrays to get a 96 x 4 array
-            mcd_array = np.dot(bus_data,traffic_array)
-
-            # convert mcd_array to a 1 x 384 array by unstacking the rows
-            mcd_array = mcd_array.reshape(1, -1)
-
-            # add it to the empty array
-            to_df_array = np.append(to_df_array, mcd_array, axis=0)
-            print(f'Number of arrays: {len(to_df_array)}')
-        
-        return to_df_array
-            
-            
             
 class EDA_Data:
 

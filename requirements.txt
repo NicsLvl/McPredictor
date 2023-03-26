@@ -6,3 +6,4 @@ geopy==2.3.0
 scikit-learn==1.2.1
 matplotlib==3.7.1
 seaborn==0.12.2
+plotly==5.13.1
