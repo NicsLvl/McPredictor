@@ -7,7 +7,6 @@ import pandas as pd
 import numpy as np
 from geopy.distance import geodesic
 
-
 class BusStopFile:
 
     def __init__(self, file_path, df=None):
@@ -156,7 +155,9 @@ class Distance_Data:
     
     def traffic_count(self, mcd_df, stop_df, bus_data, distance_list):
         
-        mcd_list = []
+        # create an empty numpy array
+        to_df_array = np.empty((0,384))
+
         for mcd in range(len(mcd_df)):
             # create an empty 5082 x 4 numpy array
             traffic_array = np.zeros((len(stop_df), len(distance_list)))
@@ -179,12 +180,11 @@ class Distance_Data:
             # convert mcd_array to a 1 x 384 array by unstacking the rows
             mcd_array = mcd_array.reshape(1, -1)
 
-            # add it to a list
-            mcd_list.append(mcd_array)
-
-            print(f'Number of arrays in list: {len(mcd_list)}')
+            # add it to the empty array
+            to_df_array = np.append(to_df_array, mcd_array, axis=0)
+            print(f'Number of arrays: {len(to_df_array)}')
         
-        return mcd_list
+        return to_df_array
             
             
             
