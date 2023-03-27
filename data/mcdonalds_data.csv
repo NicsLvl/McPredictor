@@ -1,145 +1,145 @@
-﻿title,address,latitude,longitude,classification,planning_area,makan index,region,region_type,population,size,density,24 hours?,property_type
-McDonald's Tampines East CC,"10 Tampines St 23, #01-01 Tampines East Community Centre, Singapore 529341",1.3533873,103.9545991,Medium,Tampines,6.53,East,OCR,265850,20.89,12726.18,No,State
-McDonald's Tampines Mall,"4 Tampines Central 5, #01 - 33 Tampines Mall, Singapore 529510",1.3527391,103.9449785,Medium,Tampines,6.53,East,OCR,265850,20.89,12726.18,No,Retail
-McDonald's Tampines West CC,"5 Tampines Ave 3, #01-01 Tampines West Community Club, Singapore 529705",1.3488069,103.9357863,Medium,Tampines,6.53,East,OCR,265850,20.89,12726.18,Yes,State
-McDonald's Bedok Reservoir,"632 Bedok Reservoir Rd, #01-850, Singapore 470632",1.332194,103.913711,Low,Bedok,6.25,East,OCR,278970,21.69,12861.69,Yes,
-McDonald's Pasir Ris Sports Complex,"120 Pasir Ris Central, #01-12 Sports Centre, Singapore 519640",1.3740876,103.9519247,High,Pasir Ris,6.37,East,OCR,146410,15.02,9747.67,Yes,State
-McDonald's Changi City Point,"5 Changi Business Park Central 1 01-10/11 Changi City Point, 5 Changi Business Park Central 1, #01 - 10 / 11, Singapore 486038",1.334552,103.9624183,Medium,Tampines,6.53,East,OCR,265850,20.89,12726.18,No,Retail
-McDonald's Bedok North,"539 Bedok North Street 3, #01-643 Kaki Bukit Mall, Singapore 460539",1.3320011,103.9257593,Medium,Bedok,6.25,East,OCR,278970,21.69,12861.69,Yes,Retail
-McDonald's Bedok Reservoir Park,"Blk 744 Bedok Reservoir Rd, #01-3019, Singapore 470744",1.337286,103.9214796,Medium,Bedok,6.25,East,OCR,278970,21.69,12861.69,No,HDB
-McDonald's White Sands,"1 Pasir Ris Central St 3, #01-28/29 White Sands, Singapore 518457",1.3723603,103.9493564,Low,Pasir Ris,6.37,East,OCR,146410,15.02,9747.67,No,Retail
-McDonald's Tampines Green View,"Blk 614 Tampines North Dr. 1, #01-09, Singapore 520614",1.365567,103.9366465,Medium,Tampines,6.53,East,OCR,265850,20.89,12726.18,No,HDB
-McDonald's Loyang Point,"258 Pasir Ris Street 21 01-25 Loyang Point, Singapore 510258",1.3669641,103.9645341,Medium,Pasir Ris,6.37,East,OCR,146410,15.02,9747.67,No,Retail
-McDonald's Tampines Mart (TN3),"5 Tampines Street 32, #01-01 Tampines Mart, Singapore 529284",1.3539205,103.9595183,Medium,Tampines,6.53,East,OCR,265850,20.89,12726.18,Yes,
-McDonald's Shell Tampines,"9 Tampines Ave 2, Singapore 529731",1.3491458,103.9476641,High,Tampines,6.53,East,OCR,265850,20.89,12726.18,Yes,
-McDonald's Eastpoint Mall,"3 Simei Street 6, #01-34 Eastpoint Mall, Singapore 528833",1.3427303,103.9530181,Medium,Tampines,6.53,East,OCR,265850,20.89,12726.18,No,Retail
-McDonald's Temasek Poly,"21 Tampines Ave 1, #30B-01-02 Temasek Polytechnic, Singapore 529757",1.3445917,103.9323374,Student,Tampines,6.53,East,OCR,265850,20.89,12726.18,No,
-McDonald's Our Tampines Hub,"1 Tampines Walk, #01-13/14 Our Tampines Hub, Singapore 528523",1.3532328,103.9405255,Medium,Tampines,6.53,East,OCR,265850,20.89,12726.18,Yes,State
-McDonald's Elias,"93 Pasir Ris Drive 3, #01-02 Elias Community Club, Singapore 519498",1.3784849,103.9426951,Medium,Pasir Ris,6.37,East,OCR,146410,15.02,9747.67,Yes,State
-McDonald's Downtown East,"1 Pasir Ris Cl, #01-338, Singapore 519599",1.3771512,103.9549488,Medium,Pasir Ris,6.37,East,OCR,146410,15.02,9747.67,No,
-McDonald's Sengkang Rivervale,"118 Rivervale Dr, #01-32 Rivervale Plaza, Singapore 540118",1.3851593,103.9013153,Medium,Sengkang,6.46,North East,OCR,253250,10.59,23914.07,Yes,Retail
-McDonald's @ T3 Public,"65 Airport Blvd., #01-03, Singapore 819653",1.3566264,103.9863923,High,Changi,0,East,OCR,1640,40.61,40.38,No,
-McDonald's Paya Lebar Square,"60 Paya Lebar Rd, #01-68 Paya Lebar Square, Singapore 409051",1.3184358,103.8927403,Medium,Geylang,6.04,Central,RCR,109500,9.64,11358.92,No,Retail
-McDonald's Bedok Mall,"311 New Upper Changi Road #01-10/11 Bedok Mall, 311 New Upper Changi Rd, Unit #01 - 10 / 11, Singapore 467360",1.3243538,103.929331,Medium,Bedok,6.25,East,OCR,278970,21.69,12861.69,No,Retail
-McDonald's Hougang Mall,"90 Hougang Ave 10, #01-16/17 Hougang Mall, Singapore 538766",1.3723045,103.8937585,Low,Hougang,5.97,North East,OCR,227610,13.93,16339.55,No,Retail
-McDonald's Hougang 8,"684 Hougang Ave 8, #01-999, Singapore 530684",1.3740205,103.8868674,Medium,Hougang,5.97,North East,OCR,227610,13.93,16339.55,Yes,
-McDonald’s Jewel,"78 Airport Boulevard Jewel, B1-298 Singapore Changi Airport, Singapore 819666",1.3603912,103.989642,High,Changi,0,East,OCR,1640,40.61,40.38,No,
-McDonald's Siglap,"55 Siglap Rd, #01-07/08/09 Siglap Centre, Singapore 455871",1.3125941,103.9231451,Medium,Bedok,6.25,East,OCR,278970,21.69,12861.69,Yes,
-McDonald's Geylang East Central,"113 Aljunied Ave 2, #01-01, Singapore 380113",1.3204528,103.8860187,Medium,Geylang,6.04,Central,RCR,109500,9.64,11358.92,Yes,
-McDonald's Rivervale Mall,"11 Rivervale Cres, #01-27 Rivervale Mall, Singapore 545082",1.3920163,103.9048267,Medium,Sengkang,6.46,North East,OCR,253250,10.59,23914.07,Yes,Retail
-McDonald's Hougang,"Blk 208 Hougang St 21, #01-217, Singapore 530208",1.3585041,103.8863533,Low,Hougang,5.97,North East,OCR,227610,13.93,16339.55,Yes,HDB
-McDonald's Punggol21,"80 Punggol Field, #01-02 Punggol 21 Community Club, Singapore 828815",1.3934992,103.9135328,Medium,Punggol,6.39,North East,OCR,186270,9.34,19943.25,No,State
-McDonald's Parkway,"1 Marine Parade Central, #01-01 Parkway Centre, Singapore 449408",1.3018671,103.9061067,Medium,Marine Parade,6.13,Central,RCR,46070,6.12,7527.78,No,Retail
-McDonald's Sengkang Sports Complex,"57 Anchorvale Rd, #02-03, Singapore 544964",1.3968502,103.8873924,High,Sengkang,6.46,North East,OCR,253250,10.59,23914.07,No,State
-McDonald's Shell Hougang,"600 Hougang Ave 3, #01-01, Singapore 538846",1.3492383,103.8900661,High,Hougang,5.97,North East,OCR,227610,13.93,16339.55,Yes,
-McDonald's Buangkok Square,"Blk 991 Buangkok Link, #01-14, Singapore 530991",1.3845032,103.8817397,Medium,Hougang,5.97,North East,OCR,227610,13.93,16339.55,No,HDB
-McDonald's Marine Cove,"1000 ECP, #01-05 Marine Cove, Singapore 449876",1.301352,103.9129206,High,Marine Parade,6.13,Central,RCR,46070,6.12,7527.78,No,
-McDonald's Kallang (Stadium),"200 Stadium Blvd, #01-3669, Singapore 397801",1.305296,103.8819044,High,Kallang,5.96,Central,RCR,101300,9.17,11046.89,Yes,
-McDonald's Siglap CC,"BLK 151 Bedok South Road, #01-12 Siglap CC, Singapore 460151",1.3172203,103.9470145,Medium,Bedok,6.25,East,OCR,278970,21.69,12861.69,No,HDB
-McDonald's Hougang 1,"1 Hougang Street 91, #01-26/39 Hougang 1, Singapore 538692",1.3753774,103.8797023,Medium,Hougang,5.97,North East,OCR,227610,13.93,16339.55,No,Retail
-McDonald's Serangoon Avenue 3,"267 Serangoon Ave 3, #01-37, Singapore 550267",1.3531873,103.8709527,Medium,Serangoon,6.1,North East,OCR,118400,10.1,11722.77,Yes,
-McDonald's Aperia,"12 Kallang Ave, #01-24 Aperia Mall, Singapore 339511",1.3103444,103.8641272,Medium,Kallang,5.96,Central,RCR,101300,9.17,11046.89,No,Retail
-McDonald's Bendemeer,"Block 22 Boon Keng Rd, #01-01, Singapore 330022",1.3190006,103.861742,Low,Kallang,5.96,Central,RCR,101300,9.17,11046.89,Yes,
-McDonald's Compassone,"1 Sengkang Square, #B1 - 12 / 13, Singapore 545078",1.3923863,103.8952953,Medium,Sengkang,6.46,North East,OCR,253250,10.59,23914.07,No,Retail
-McDonald's City Square Mall,"180 Kitchener Road, #B1-03/05, City Square Mall, Singapore 208539",1.3113982,103.8565897,Medium,Kallang,5.96,Central,RCR,101300,9.17,11046.89,No,Retail
-McDonald's Toa Payoh Central,"600 Lor 4 Toa Payoh, #01-02, Singapore 319515",1.3340561,103.8509709,Low,Toa Payoh,5.89,Central,RCR,129250,8.17,15820.07,Yes,
-McDonald's Potong Pasir,"Block 148 Potong Pasir Ave 1, #01-43, Singapore 350148",1.3326694,103.8680478,Medium,Toa Payoh,5.89,Central,RCR,129250,8.17,15820.07,No,
-McDonald's Changi Airport Terminal 2 (T2) Transit Lounge,"Changi Airport Terminal 2 Departure/ Transit Lounge Central, #36-070, Singapore 819643",1.355322,103.988337,High,Changi,0,East,OCR,1640,40.61,40.38,No,
-McDonald's Toa Payoh HDB Center,"490 Lor 6 Toa Payoh, #01-11 HDB Hub, Singapore 310490",1.3325896,103.8481317,Low,Toa Payoh,5.89,Central,RCR,129250,8.17,15820.07,No,
-McDonald's Ang Mo Kio Park,"10 Ang Mo Kio Street 12, Singapore 567740",1.3724397,103.8447661,High,Ang Mo Kio,6.08,North East,OCR,161900,13.94,11614.06,Yes,
-McDonald's Seletar Mall,"33 Sengkang West Ave, #01-04/05/06 The Seletar Mall, Singapore 797653",1.3910661,103.8760583,Medium,Sengkang,6.46,North East,OCR,253250,10.59,23914.07,No,Retail
-McDonald's Waterway Point,"83 Punggol Central, B2-07/K4 Waterway Point West Wing, Singapore 828761",1.40669,103.9021738,Medium,Punggol,6.39,North East,OCR,186270,9.34,19943.25,Yes,Retail
-McDonald's Punggol Oasis,"Blk 681 Punggol Dr., #02-37/38 Oasis Terraces, Singapore 821669",1.4024701,103.9128724,Medium,Punggol,6.39,North East,OCR,186270,9.34,19943.25,No,HDB
-McDonald's Plaza Singapura,"68 Orchard Road, #B1-23/24, Plaza Singapura, 68 Orchard Rd, #B1-23 24 Plaza, Singapore 238839",1.3007111,103.844904,Medium,Museum,0,Central,RCR,300,0.83,361.45,No,Retail
-McDonald's Toa Payoh Lorong,"Blk 109 Lor 1 Toa Payoh, #01-318, Singapore 310109",1.3412056,103.8463979,Medium,Toa Payoh,5.89,Central,RCR,129250,8.17,15820.07,No,HDB
-McDonald's Ang Mo Kio Ave 10,"Block 448 Ang Mo Kio Ave 10, #01-1693, Singapore 560448",1.3674385,103.8563633,Low,Ang Mo Kio,6.08,North East,OCR,161900,13.94,11614.06,Yes,
-McDonald's Parklane,"35 Selegie Rd, B1-38 Parklane Shopping Mall, Singapore 188307",1.300661,103.8493367,Medium,Rochor,0,Central,RCR,12810,1.62,7907.41,No,Retail
-McDonald's NEX,"23 Serangoon Central, B2-05/06/07/08 NEX, Singapore 556083",1.3509715,103.8718992,Medium,Serangoon,6.1,North East,OCR,118400,10.1,11722.77,No,Retail
-McDonald's Toa Payoh SAFRA,"293 Lorong 6 Toa Payoh #01-02, SAFRA, Club. Singapore, Singapore 319387",1.3302726,103.854705,High,Toa Payoh,5.89,Central,RCR,129250,8.17,15820.07,No,
-McDonald's Bishan Junction 8,"9 Bishan Pl, #01-20 Junction 8, Singapore 579837",1.3502609,103.8484718,Medium,Bishan,6.28,Central,RCR,85940,7.62,11278.22,No,Retail
-McDonald's Bugis Village,"151-152 Rochor Rd, Singapore 188426",1.3012126,103.8550878,Low,Rochor,0,Central,RCR,12810,1.62,7907.41,Yes,Office
-McDonald's Marina Square,"6 Raffles Blvd, #02-156/ #02-157/ #02-166 Marina Square, Singapore 039594",1.2912208,103.8573036,High,Downtown Core,0,Central,CCR,3570,4.34,822.58,No,Retail
-McDonald's V Hotel,"70 Jellicoe Rd, Singapore 208767",1.3080123,103.862551,Medium,Kallang,5.96,Central,RCR,101300,9.17,11046.89,No,
-McDonald's Punggol SAFRA,"9 Sentul Cres, #03-05 SAFRA Punggol, Singapore 828654",1.4101714,103.9058403,High,Punggol,6.39,North East,OCR,186270,9.34,19943.25,Yes,
-McDonald's United Square,"101 Thomson Rd, #B1-11/12 United Square Shopping Mall, Singapore 307591",1.3170116,103.8439755,High,Novena,6.22,Central,CCR,50850,8.98,5662.58,No,Retail
-McDonald's Ang Mo Kio,"51 Ang Mo Kio Ave 3, #01-04, 51@AMK 569922",1.3693982,103.8473282,Low,Ang Mo Kio,6.08,North East,OCR,161900,13.94,11614.06,Yes,
-McDonald's Bugis Junction,"200 Victoria Street #01-66 Bugis Junction, Singapore 188024",1.2992456,103.8557546,Medium,Downtown Core,0,Central,CCR,3570,4.34,822.58,No,Office
-McDonald's Raffles City,"252 North Bridge Road 01-49/50/51 Raffles City Shopping Centre, Singapore 179103",1.2931499,103.8533058,High,Downtown Core,0,Central,CCR,3570,4.34,822.58,Yes,Retail
-McDonald's Suntec City,"3 Temasek Blvd, Singapore 038983",1.2947699,103.8599943,High,Downtown Core,0,Central,CCR,3570,4.34,822.58,No,Office
-McDonald's Zhongshan Mall,"20 Ah Hood Rd, #01-16 Zhongshan Mall, Singapore 329984",1.3267879,103.8467985,Medium,Novena,6.22,Central,CCR,50850,8.98,5662.58,Yes,Retail
-McDonalds Ang Mo Kio BLK163,"163 Ang Mo Kio Ave 4, #01-438, Singapore 560163",1.3736253,103.8375503,Medium,Ang Mo Kio,6.08,North East,OCR,161900,13.94,11614.06,Yes,
-McDonald's Lucky Plaza,"304 Orchard Rd, B1-19 Lucky Plaza, Singapore 238863",1.3045795,103.8340621,Tourist,Orchard,0,Central,CCR,590,0.96,614.58,No,Retail
-McDonald's SpringLeaf Tower,"3 Anson Rd, #01-03 Springleaf Tower, Singapore 079909",1.2748671,103.8459685,High,Downtown Core,0,Central,CCR,3570,4.34,822.58,No,Office
-McDonald's LIDO,"350 Orchard Rd, #05-12/13 05/21 and Shaw House, Singapore 238868",1.3059065,103.8314983,Tourist,Orchard,0,Central,CCR,590,0.96,614.58,No,Office
-McDonald's Chinatown Point,"133 New Bridge Rd, #01-03 Chinatown Point, Singapore 059432",1.2850191,103.8446308,Medium,Outram,0,Central,RCR,17420,1.37,12715.33,No,Retail
-McDonald's Northshore Plaza,"407 Northshore Dr, #02-30/31 Northshore Plaza I, Singapore 820407",1.4171246,103.9017228,Medium,Punggol,6.39,North East,OCR,186270,9.34,19943.25,No,
-McDonald's Forum,"583 Orchard Road, #B1-25, Forum The Shopping Mall, Singapore 238884",1.3061667,103.8284991,High,Orchard,0,Central,CCR,590,0.96,614.58,Yes,Retail
-McDonald's Boat Quay,"1 S Canal Rd, Singapore 048508",1.2857571,103.8497842,High,Downtown Core,0,Central,CCR,3570,4.34,822.58,Yes,
-McDonald's Bishan Park,"1378 Ang Mo Kio Ave 1, Singapore 569981",1.3608791,103.8464437,High,Bishan,6.28,Central,RCR,85940,7.62,11278.22,No,
-McDonald's Tiong Bahru Plaza,"302 Tiong Bahru Road 01-145/146, #147, Singapore 168732",1.2865842,103.8274678,Medium,Bukit Merah,6.06,Central,RCR,150630,14.34,10504.18,No,Retail
-McDonald's Funan Centre,"Funan 107, North Bridge Rd, #01-16, Singapore 179105",1.2917796,103.8495637,High,Downtown Core,0,Central,CCR,3570,4.34,822.58,No,Retail
-McDonald’s Sengkang Grand Mall,"70 Compassvale Bow, #01-34, #01-35, #01-36, Singapore 544692",1.3817411,103.8927792,Medium,Sengkang,6.46,North East,OCR,253250,10.59,23914.07,No,
-McDonald's Yishun (YS),"369 Sembawang Rd, #01-01 Sembawang Cottage, Singapore 758382",1.4267075,103.8260655,Medium,Yishun,6.2,North,OCR,223340,21.24,10515.07,No,
-McDonald's Northpoint,"930 Yishun Ave 2, #01 - 12 / 13 Northpoint, Singapore 769098",1.429862,103.8356422,Low,Yishun,6.2,North,OCR,223340,21.24,10515.07,Yes,Retail
-McDonald's Khatib,"Blk 846 Yishun Ring Rd, #01-3669, Singapore 760846",1.4167918,103.8345779,Low,Yishun,6.2,North,OCR,223340,21.24,10515.07,No,HDB
-McDonald's People's Park,"1 Park Road, #01-69 to #01-75, People's Park Complex, Singapore 059108",1.2843363,103.8423916,Medium,Outram,0,Central,RCR,17420,1.37,12715.33,Yes,Retail
-McDonald's Gardens By The Bay,"18 Marina Gardens Dr, #02-04 Garden By The Bay, Singapore 018954",1.2825155,103.8653757,Tourist,Marina South,0,Central,RCR,0,1.62,0,No,
-"McDonald's Ridout Tea Garden, Queensway","580 Queensway, Ridout Tea Garden, Singapore 149066",1.304278,103.8019459,Medium,Queenstown,6.25,Central,RCR,96970,20.43,4746.45,Yes,
-McDonald's Metropolis,"9 North Buona Vista Drive #01-08 Tower 1 The Metropolis, Singapore 138588",1.3061511,103.7910856,Medium,Queenstown,6.25,Central,RCR,96970,20.43,4746.45,No,
-McDonald's Alocassia,"383 Bukit Timah Rd, #01-09B Alocassia Apartments, Singapore 259727",1.3195389,103.827332,Low,Tanglin,0,Central,CCR,23270,7.63,3049.8,No,Retail
-McDonald's Farrer Road,"10 Jln Serene, #01-01 Serene Centre, Singapore 258748",1.3223957,103.8135353,Medium,Tanglin,0,Central,CCR,23270,7.63,3049.8,Yes,Retail
-McDonald's Great World City,"1 Kim Seng Promenade #01-124/25/26 Great World City, 1 Kim Seng Promenade, #01 - 162, Singapore 237994",1.2933335,103.8325368,High,Singapore River,0,Central,RCR,3510,0.96,3656.25,No,
-McDonald's Woodlands Mart,"Block 768 Woodlands Avenue 6 01-01 Woodlands Mart, Singapore 730768",1.4460315,103.7984815,Low,Woodlands,6.53,North,OCR,252570,13.59,18584.99,Yes,
-McDonald's Singapore Polytechnic,"500 Dover Road Teaching Block 16, 500 Dover Rd, Unit 13 Level 1 Singapore Polytechnic, Singapore 139651",1.3100904,103.7785341,Student,Queenstown,6.25,Central,RCR,96970,20.43,4746.45,No,
-McDonald's Sun Plaza,"30 Sembawang Dr, #01 - 16 / 17 Sun Plaza, Singapore 757713",1.4482725,103.819938,Medium,Sembawang,6.7,North,OCR,108650,12.34,8804.7,Yes,
-McDonald's ARC,"460 Alexandra Rd, #01 - 25, Singapore 119963",1.2745043,103.8015418,High,Queenstown,6.25,Central,RCR,96970,20.43,4746.45,No,
-McDonald's Woodlands Civic Centre,"900 South Woodlands Drive #01-01 Woodlands Civic Centre, Singapore 730900",1.435152,103.787195,Low,Woodlands,6.53,North,OCR,252570,13.59,18584.99,No,
-McDonald's Fajar,"Blk 445 Fajar Rd, #01-520, Singapore 670445",1.3838178,103.7704254,Medium,Bukit Panjang,6.31,West,OCR,137730,8.99,15320.36,Yes,HDB
-McDonald's West Coast Park,"71 W Coast Hwy, Singapore 126844",1.2975443,103.7633584,High,Queenstown,6.25,Central,RCR,96970,20.43,4746.45,Yes,
-McDonald's Bukit Panjang Plaza,"1 Jelebu Road, #02-01, Bukit Panjang Plaza, Singapore 677743",1.3794957,103.7644471,Low,Bukit Panjang,6.31,West,OCR,137730,8.99,15320.36,No,
-McDonald's Causeway Point,"1 Woodlands Square, #01 - 35 Causeway Point, Singapore 738099",1.4364427,103.7864043,Low,Woodlands,6.53,North,OCR,252570,13.59,18584.99,Yes,
-McDonald's Queensway Shopping Centre,"1 Queensway, #02-46, Queensway Shopping Centre, Singapore 149053",1.2872226,103.8033568,Low,Queenstown,6.25,Central,RCR,96970,20.43,4746.45,No,
-McDonald's Beauty World,"144 Upper Bukit Timah Rd, #01-39/40 Beauty World Centre, Singapore 588177",1.3422905,103.7761285,Medium,Bukit Timah,5.33,Central,CCR,79940,17.53,4560.18,No,
-McDonald's Choa Chu Kang CC,"35 Teck Whye Ave, #01-01 Chua Chu Kang Community Club, Singapore 688892",1.3811344,103.751914,Low,Choa Chu Kang,6.37,West,OCR,190780,6.11,31224.22,Yes,State
-McDonald's Clementi Ave 3,"Blk 451 Clementi Ave 3, #01-309, Singapore 120451",1.3124073,103.7656754,Medium,Clementi,6.22,West,OCR,94330,9.49,9939.94,No,HDB
-McDonald's SAFRA Yishun,"60 Yishun Ave 4, #01-11 Safra, Yishun 769027",1.4232734,103.840973,High,Yishun,6.2,North,OCR,223340,21.24,10515.07,Yes,
-McDonald's Clementi Mall,"3155 Commonwealth Avenue West #01-06/07/08/09 The Clementi Mall, Singapore 129588",1.314918,103.7643089,Medium,Clementi,6.22,West,OCR,94330,9.49,9939.94,Yes,Retail
-McDonald's Greenridge Shopping Centre,"Blk 524A Jelapang Road #01-02A Greenridge Shopping Centre, Singapore 671524",1.3853755,103.7663006,Medium,Bukit Panjang,6.31,West,OCR,137730,8.99,15320.36,No,HDB
-McDonald's Choa Chu Kang 62,"Blk 623 Choa Chu Kang Street 62, #01-262, Singapore 680623",1.3981564,103.7471165,Low,Choa Chu Kang,6.37,West,OCR,190780,6.11,31224.22,Yes,HDB
-McDonald's Jurong East 24,"256 Jurong East St 24, #01-381, Singapore 600256",1.3441045,103.7382863,Low,Jurong East,6.71,West,OCR,76800,17.83,4307.35,Yes,
-McDonald's Bukit Batok West,"Blk 152 Bukit Batok Street 11, #01-280, Singapore 650152",1.3478795,103.7443841,Low,Bukit Batok,6.13,West,OCR,165280,11.13,14849.96,No,HDB
-McDonald's Regal,"3501 Jalan Bukit Merah, #01-01, Singapore 159460",1.2836726,103.8182785,Low,Bukit Merah,6.06,Central,RCR,150630,14.34,10504.18,Yes,
-McDonald's Vista Point,"548 Woodlands Drive 44, Singapore 730548",1.4306343,103.7934851,Low,Woodlands,6.53,North,OCR,252570,13.59,18584.99,No,
-McDonald's TradeHub 21,"28 Boon Lay Way, #01-173 Tradehub 21, Singapore 609971",1.3281888,103.7516581,High,Clementi,6.22,West,OCR,94330,9.49,9939.94,No,
-McDonald's Bukit Batok,"Blk 632 Bukit Batok Central 01-138/#01-140 / #01-142, Singapore 650632",1.3495284,103.7504166,Medium,Bukit Batok,6.13,West,OCR,165280,11.13,14849.96,Yes,HDB
-McDonald's JEM,"50 Jurong Gateway Rd, #01-63, #02-55, Singapore 608549",1.3333971,103.7427873,Medium,Jurong East,6.71,West,OCR,76800,17.83,4307.35,Yes,Retail
-McDonald's Jurong Point,"1 Jurong West Central 2, #01-31 Jurong Point, Singapore 648886",1.3398558,103.7064063,Medium,Jurong West,6.35,West,OCR,258700,14.69,17610.62,No,Retail
-McDonald's Hillion,"17 Petir Rd, #B1-25/26/27 Hillion Mall, Singapore 678278",1.3784819,103.7632117,Medium,Bukit Panjang,6.31,West,OCR,137730,8.99,15320.36,No,Retail
-McDonald's Keat Hong,"818 Choa Chu Kang Ave 1, #01-02 Keat Hong Mirage, Singapore 680818",1.3780819,103.7488391,Medium,Choa Chu Kang,6.37,West,OCR,190780,6.11,31224.22,Yes,
-McDonald's Bukit Gombak,"374 Bukit Batok Street 31, #01-198/202, Singapore 650374",1.3575525,103.750601,Medium,Bukit Batok,6.13,West,OCR,165280,11.13,14849.96,Yes,
-McDonald's Jcube,"2 Jurong East Central 1, #01-09 JCube, Singapore 609731",1.3330425,103.7401835,Medium,Jurong East,6.71,West,OCR,76800,17.83,4307.35,No,Retail
-McDonald's IMM,"2 Jurong East Street 21, #01-18 IMM Building, Singapore 609601",1.3354104,103.7462797,Low,Jurong East,6.71,West,OCR,76800,17.83,4307.35,No,Retail
-McDonald's Resorts World Sentosa,"8 Sentosa Gateway, #B1 - 211, 212, 213, 214, Singapore 098138",1.257376,103.8201731,Tourist,Southern Islands,0,Central,CCR,2240,6.07,369.03,No,
-McDonald's Choa Chu Kang Lot 1,"10 Choa Chu Kang Ave 4, #01-21 MRT Station. Singpaore, Singapore 689810",1.3852487,103.7443487,Medium,Choa Chu Kang,6.37,West,OCR,190780,6.11,31224.22,No,Retail
-McDonald's Gek Poh,"762 Jurong West Street 75, #02-250 Gek Poh Shopping Centre, Singapore 640762",1.3489162,103.6976086,Low,Jurong West,6.35,West,OCR,258700,14.69,17610.62,No,
-McDonald's NTU,"Block N 2, 1,#01 76 Nanyang Dr, #08 Nanyang Technological University, Singapore 637331",1.3470369,103.68034,Student,Western Water Catchment,0,West,OCR,560,69.46,8.06,No,
-McDonald's WoodGrove,"30 Woodlands Ave 1, #01-06 The Woodgrove, Singapore 739065",1.4295794,103.7813318,Medium,Woodlands,6.53,North,OCR,252570,13.59,18584.99,No,
-McDonald's 888 Plaza,"Blk 888 Woodlands Drive 50, #01-737A, Singapore 730888",1.4377241,103.7952735,Low,Woodlands,6.53,North,OCR,252570,13.59,18584.99,No,HDB
-McDonald's Woodlands North Plaza,"Blk 883 Woodlands Street 82, #01-468, Singapore 730883",1.442578,103.7911885,Low,Woodlands,6.53,North,OCR,252570,13.59,18584.99,No,HDB
-McDonald's Sembawang Shopping Centre,"604 Sembawang Road, Sembawang Shopping Centre, #01-27, Singapore 758459",1.4418355,103.8248907,Medium,Sembawang,6.7,North,OCR,108650,12.34,8804.7,No,Retail
-McDonald's Yishun Ring Road,"Blk 293 Yishun Street 22, #01-237, Singapore 760293",1.4360915,103.8377479,Low,Yishun,6.2,North,OCR,223340,21.24,10515.07,Yes,HDB
-McDonald's Blossom Spring,"461 Yishun Ave 6, #01-03 Blossom Spring@Yishun, Singapore 760461",1.4282704,103.8498645,Medium,Yishun,6.2,North,OCR,223340,21.24,10515.07,No,
-McDonald's Canberra,"133 Canberra View, #01-01/02 03/28, Singapore 750133",1.4429738,103.8306379,Medium,Sembawang,6.7,North,OCR,108650,12.34,8804.7,No,
-McDonald's Limbang,"Block 533 Choa Chu Kang Street 51, #01-10 Limbang Shopping Centre, Singapore 680533",1.3922588,103.7431268,Medium,Choa Chu Kang,6.37,West,OCR,190780,6.11,31224.22,No,
-McDonald's LeQuest,"4 Bukit Batok Street 41, #01-42, Singapore 657991",1.3557128,103.7408413,Medium,Bukit Batok,6.13,West,OCR,165280,11.13,14849.96,No,
-McDonald's Jurong Green CC,"6A Jurong West Ave 1, Jurong Green CC, Singapore 649520",1.3505115,103.7254572,Medium,Jurong West,6.35,West,OCR,258700,14.69,17610.62,Yes,
-McDonald's Jurong Spring CC,"01 Jurong West Street 52 05, #8 Jurong Spring Community Club, Singapore 649296",1.3483547,103.7183772,Medium,Jurong West,6.35,West,OCR,258700,14.69,17610.62,Yes,State
-McDonald's Pioneer Mall,"638 Jurong West Street 61, #01-01/02 Pioneer Mall, Singapore 640638",1.3415661,103.6969298,Medium,Jurong West,6.35,West,OCR,258700,14.69,17610.62,Yes,Retail
-McDonald's Fairprice Hub,"1 Joo Koon Cir, #01-27/28/29/30/31 FairPrice Hub, Singapore 629117",1.3273406,103.6782616,Medium,Pioneer,0,West,OCR,0,12.1,0,No,
-McDonald's Jurong Central Park,"291 Boon Lay Way, Singapore 649849",1.3391576,103.7086677,High,Jurong West,6.35,West,OCR,258700,14.69,17610.62,Yes,
-McDonald's Jurong Bowl,"1 Yuan Ching Rd, Jurong Family Bowl, Singapore 618640",1.3263056,103.7246177,High,Jurong West,6.35,West,OCR,258700,14.69,17610.62,Yes,
-McDonald's Harbour Front Centre,"01-87, #01-88 and #01-89 1, Maritime Square, Harbourfront Centre, Singapore 099253",1.2642175,103.8203582,High,Bukit Merah,6.06,Central,RCR,150630,14.34,10504.18,No,
-McDonald's Vivocity,"1 HarbourFront Walk, B2-40/41/42 VivoCity, Singapore 098585",1.2647989,103.8214814,High,Bukit Merah,6.06,Central,RCR,150630,14.34,10504.18,No,
-McDonald's Shell Havelock,"548 Havelock Rd, Singapore 169637",1.2900261,103.8325063,High,Bukit Merah,6.06,Central,RCR,150630,14.34,10504.18,No,
-McDonald's Tampines (near CPF Building),"Blk 513 Tampines Central 1, #01-150, Singapore 520513",1.3536087,103.9441485,Medium,Tampines,6.53,East,OCR,265850,20.89,12726.18,Yes,HDB
-McDonald’s Admiralty Place,"678A Woodlands Ave 6, #01-05, Singapore 731678",1.4402264,103.8010912,Medium,Woodlands,6.53,North,OCR,252570,13.59,18584.99,No,
+﻿title,address,latitude,longitude,classification,planning_area,pa_population,pa_income,subzone,subzone_population,subzone_income,makan index,region,region_type,population,size,density,24 hours?,property_type
+McDonald's Tampines East CC,"10 Tampines St 23, #01-01 Tampines East Community Centre, Singapore 529341",1.3533873,103.9545991,Medium,Tampines,265690,1.79808E-05,Tampines East,127070,3.31487E-05,6.53,East,OCR,265850,20.89,12726.18,No,State
+McDonald's Tampines Mall,"4 Tampines Central 5, #01 - 33 Tampines Mall, Singapore 529510",1.3527391,103.9449785,Medium,Tampines,265690,1.79808E-05,Tampines East,127070,3.31487E-05,6.53,East,OCR,265850,20.89,12726.18,No,Retail
+McDonald's Tampines West CC,"5 Tampines Ave 3, #01-01 Tampines West Community Club, Singapore 529705",1.3488069,103.9357863,Medium,Tampines,265690,1.79808E-05,Tampines West,81220,5.57363E-05,6.53,East,OCR,265850,20.89,12726.18,Yes,State
+McDonald's Bedok Reservoir,"632 Bedok Reservoir Rd, #01-850, Singapore 470632",1.332194,103.913711,Low,Bedok,278640,1.64131E-05,Kaki Bukit,36280,0.000120354,6.25,East,OCR,278970,21.69,12861.69,Yes,
+McDonald's Pasir Ris Sports Complex,"120 Pasir Ris Central, #01-12 Sports Centre, Singapore 519640",1.3740876,103.9519247,High,Pasir Ris,146260,3.13952E-05,Pasir Ris Central,32420,0.000165667,6.37,East,OCR,146410,15.02,9747.67,Yes,State
+McDonald's Changi City Point,"5 Changi Business Park Central 1 01-10/11 Changi City Point, 5 Changi Business Park Central 1, #01 - 10 / 11, Singapore 486038",1.334552,103.9624183,Medium,Tampines,265690,1.79808E-05,Xilin,1760,0.004099948,6.53,East,OCR,265850,20.89,12726.18,No,Retail
+McDonald's Bedok North,"539 Bedok North Street 3, #01-643 Kaki Bukit Mall, Singapore 460539",1.3320011,103.9257593,Medium,Bedok,278640,1.64131E-05,Bedok North,82480,4.85267E-05,6.25,East,OCR,278970,21.69,12861.69,Yes,Retail
+McDonald's Bedok Reservoir Park,"Blk 744 Bedok Reservoir Rd, #01-3019, Singapore 470744",1.337286,103.9214796,Medium,Bedok,278640,1.64131E-05,Bedok Reservoir,25180,0.000203649,6.25,East,OCR,278970,21.69,12861.69,No,HDB
+McDonald's White Sands,"1 Pasir Ris Central St 3, #01-28/29 White Sands, Singapore 518457",1.3723603,103.9493564,Low,Pasir Ris,146260,3.13952E-05,Pasir Ris Central,32420,0.000165667,6.37,East,OCR,146410,15.02,9747.67,No,Retail
+McDonald's Tampines Green View,"Blk 614 Tampines North Dr. 1, #01-09, Singapore 520614",1.365567,103.9366465,Medium,Tampines,265690,1.79808E-05,Tampines North,16700,0.000237531,6.53,East,OCR,265850,20.89,12726.18,No,HDB
+McDonald's Loyang Point,"258 Pasir Ris Street 21 01-25 Loyang Point, Singapore 510258",1.3669641,103.9645341,Medium,Pasir Ris,146260,3.13952E-05,Pasir Ris Drive,52860,8.74264E-05,6.37,East,OCR,146410,15.02,9747.67,No,Retail
+McDonald's Tampines Mart (TN3),"5 Tampines Street 32, #01-01 Tampines Mart, Singapore 529284",1.3539205,103.9595183,Medium,Tampines,265690,1.79808E-05,Tampines East,127070,3.31487E-05,6.53,East,OCR,265850,20.89,12726.18,Yes,
+McDonald's Shell Tampines,"9 Tampines Ave 2, Singapore 529731",1.3491458,103.9476641,High,Tampines,265690,1.79808E-05,Tampines East,127070,3.31487E-05,6.53,East,OCR,265850,20.89,12726.18,Yes,
+McDonald's Eastpoint Mall,"3 Simei Street 6, #01-34 Eastpoint Mall, Singapore 528833",1.3427303,103.9530181,Medium,Tampines,265690,1.79808E-05,Simei,38940,0.000144125,6.53,East,OCR,265850,20.89,12726.18,No,Retail
+McDonald's Temasek Poly,"21 Tampines Ave 1, #30B-01-02 Temasek Polytechnic, Singapore 529757",1.3445917,103.9323374,Student,Tampines,265690,1.79808E-05,Tampines West,81220,5.57363E-05,6.53,East,OCR,265850,20.89,12726.18,No,
+McDonald's Our Tampines Hub,"1 Tampines Walk, #01-13/14 Our Tampines Hub, Singapore 528523",1.3532328,103.9405255,Medium,Tampines,265690,1.79808E-05,Tampines West,81220,5.57363E-05,6.53,East,OCR,265850,20.89,12726.18,Yes,State
+McDonald's Elias,"93 Pasir Ris Drive 3, #01-02 Elias Community Club, Singapore 519498",1.3784849,103.9426951,Medium,Pasir Ris,146260,3.13952E-05,Pasir Ris West,35410,0.000147703,6.37,East,OCR,146410,15.02,9747.67,Yes,State
+McDonald's Downtown East,"1 Pasir Ris Cl, #01-338, Singapore 519599",1.3771512,103.9549488,Medium,Pasir Ris,146260,3.13952E-05,Pasir Ris Park,7980,0.00088159,6.37,East,OCR,146410,15.02,9747.67,No,
+McDonald's Sengkang Rivervale,"118 Rivervale Dr, #01-32 Rivervale Plaza, Singapore 540118",1.3851593,103.9013153,Medium,Sengkang,253120,1.88842E-05,Rivervale,58850,8.19358E-05,6.46,North East,OCR,253250,10.59,23914.07,Yes,Retail
+McDonald's @ T3 Public,"65 Airport Blvd., #01-03, Singapore 819653",1.3566264,103.9863923,High,Changi,1830,0.00138553,Changi Bay,0,0,0,East,OCR,1640,40.61,40.38,No,
+McDonald's Paya Lebar Square,"60 Paya Lebar Rd, #01-68 Paya Lebar Square, Singapore 409051",1.3184358,103.8927403,Medium,Geylang,109580,3.78355E-05,Geylang East,29520,0.000168964,6.04,Central,RCR,109500,9.64,11358.92,No,Retail
+McDonald's Bedok Mall,"311 New Upper Changi Road #01-10/11 Bedok Mall, 311 New Upper Changi Rd, Unit #01 - 10 / 11, Singapore 467360",1.3243538,103.929331,Medium,Bedok,278640,1.64131E-05,Bedok North,82480,4.85267E-05,6.25,East,OCR,278970,21.69,12861.69,No,Retail
+McDonald's Hougang Mall,"90 Hougang Ave 10, #01-16/17 Hougang Mall, Singapore 538766",1.3723045,103.8937585,Low,Hougang,227540,2.09386E-05,Hougang Central,4640,0.001168159,5.97,North East,OCR,227610,13.93,16339.55,No,Retail
+McDonald's Hougang 8,"684 Hougang Ave 8, #01-999, Singapore 530684",1.3740205,103.8868674,Medium,Hougang,227540,2.09386E-05,Hougang West,44990,9.22978E-05,5.97,North East,OCR,227610,13.93,16339.55,Yes,
+McDonald’s Jewel,"78 Airport Boulevard Jewel, B1-298 Singapore Changi Airport, Singapore 819666",1.3603912,103.989642,High,Changi,1830,0.00138553,Changi Bay,0,0,0,East,OCR,1640,40.61,40.38,No,
+McDonald's Siglap,"55 Siglap Rd, #01-07/08/09 Siglap Centre, Singapore 455871",1.3125941,103.9231451,Medium,Bedok,278640,1.64131E-05,Frankel,34490,0.000215138,6.25,East,OCR,278970,21.69,12861.69,Yes,
+McDonald's Geylang East Central,"113 Aljunied Ave 2, #01-01, Singapore 380113",1.3204528,103.8860187,Medium,Geylang,109580,3.78355E-05,Aljunied,41540,0.000113252,6.04,Central,RCR,109500,9.64,11358.92,Yes,
+McDonald's Rivervale Mall,"11 Rivervale Cres, #01-27 Rivervale Mall, Singapore 545082",1.3920163,103.9048267,Medium,Sengkang,253120,1.88842E-05,Rivervale,58850,8.19358E-05,6.46,North East,OCR,253250,10.59,23914.07,Yes,Retail
+McDonald's Hougang,"Blk 208 Hougang St 21, #01-217, Singapore 530208",1.3585041,103.8863533,Low,Hougang,227540,2.09386E-05,Lorong Ah Soo,32140,0.000152046,5.97,North East,OCR,227610,13.93,16339.55,Yes,HDB
+McDonald's Punggol21,"80 Punggol Field, #01-02 Punggol 21 Community Club, Singapore 828815",1.3934992,103.9135328,Medium,Punggol,186270,2.51548E-05,Punggol Field,48850,9.92301E-05,6.39,North East,OCR,186270,9.34,19943.25,No,State
+McDonald's Parkway,"1 Marine Parade Central, #01-01 Parkway Centre, Singapore 449408",1.3018671,103.9061067,Medium,Marine Parade,46020,8.78513E-05,Marine Parade,26640,0.00017099,6.13,Central,RCR,46070,6.12,7527.78,No,Retail
+McDonald's Sengkang Sports Complex,"57 Anchorvale Rd, #02-03, Singapore 544964",1.3968502,103.8873924,High,Sengkang,253120,1.88842E-05,Anchorvale,50930,9.36826E-05,6.46,North East,OCR,253250,10.59,23914.07,No,State
+McDonald's Shell Hougang,"600 Hougang Ave 3, #01-01, Singapore 538846",1.3492383,103.8900661,High,Hougang,227540,2.09386E-05,Tai Seng,13540,0.000379367,5.97,North East,OCR,227610,13.93,16339.55,Yes,
+McDonald's Buangkok Square,"Blk 991 Buangkok Link, #01-14, Singapore 530991",1.3845032,103.8817397,Medium,Hougang,227540,2.09386E-05,Trafalgar,49920,8.32723E-05,5.97,North East,OCR,227610,13.93,16339.55,No,HDB
+McDonald's Marine Cove,"1000 ECP, #01-05 Marine Cove, Singapore 449876",1.301352,103.9129206,High,Marine Parade,46020,8.78513E-05,East Coast,0,0,6.13,Central,RCR,46070,6.12,7527.78,No,
+McDonald's Kallang (Stadium),"200 Stadium Blvd, #01-3669, Singapore 397801",1.305296,103.8819044,High,Kallang,101040,3.88154E-05,Tanjong Rhu,11340,0.000513159,5.96,Central,RCR,101300,9.17,11046.89,Yes,
+McDonald's Siglap CC,"BLK 151 Bedok South Road, #01-12 Siglap CC, Singapore 460151",1.3172203,103.9470145,Medium,Bedok,278640,1.64131E-05,Bedok South,48550,0.000109726,6.25,East,OCR,278970,21.69,12861.69,No,HDB
+McDonald's Hougang 1,"1 Hougang Street 91, #01-26/39 Hougang 1, Singapore 538692",1.3753774,103.8797023,Medium,Hougang,227540,2.09386E-05,Trafalgar,49920,8.32723E-05,5.97,North East,OCR,227610,13.93,16339.55,No,Retail
+McDonald's Serangoon Avenue 3,"267 Serangoon Ave 3, #01-37, Singapore 550267",1.3531873,103.8709527,Medium,Serangoon,118340,4.54084E-05,Serangoon Central,24160,0.000197223,6.1,North East,OCR,118400,10.1,11722.77,Yes,
+McDonald's Aperia,"12 Kallang Ave, #01-24 Aperia Mall, Singapore 339511",1.3103444,103.8641272,Medium,Kallang,101040,3.88154E-05,Kallang Bahru,0,0,5.96,Central,RCR,101300,9.17,11046.89,No,Retail
+McDonald's Bendemeer,"Block 22 Boon Keng Rd, #01-01, Singapore 330022",1.3190006,103.861742,Low,Kallang,101040,3.88154E-05,Bendemeer,37570,0.000112717,5.96,Central,RCR,101300,9.17,11046.89,Yes,
+McDonald's Compassone,"1 Sengkang Square, #B1 - 12 / 13, Singapore 545078",1.3923863,103.8952953,Medium,Sengkang,253120,1.88842E-05,Sengkang Town Centre,61320,7.64705E-05,6.46,North East,OCR,253250,10.59,23914.07,No,Retail
+McDonald's City Square Mall,"180 Kitchener Road, #B1-03/05, City Square Mall, Singapore 208539",1.3113982,103.8565897,Medium,Kallang,101040,3.88154E-05,Lavender,10160,0.000431046,5.96,Central,RCR,101300,9.17,11046.89,No,Retail
+McDonald's Toa Payoh Central,"600 Lor 4 Toa Payoh, #01-02, Singapore 319515",1.3340561,103.8509709,Low,Toa Payoh,128880,3.41194E-05,Toa Payoh Central,27630,0.000150232,5.89,Central,RCR,129250,8.17,15820.07,Yes,
+McDonald's Potong Pasir,"Block 148 Potong Pasir Ave 1, #01-43, Singapore 350148",1.3326694,103.8680478,Medium,Toa Payoh,128880,3.41194E-05,Potong Pasir,11600,0.000366454,5.89,Central,RCR,129250,8.17,15820.07,No,
+McDonald's Changi Airport Terminal 2 (T2) Transit Lounge,"Changi Airport Terminal 2 Departure/ Transit Lounge Central, #36-070, Singapore 819643",1.355322,103.988337,High,Changi,1830,0.00138553,Changi Bay,0,0,0,East,OCR,1640,40.61,40.38,No,
+McDonald's Toa Payoh HDB Center,"490 Lor 6 Toa Payoh, #01-11 HDB Hub, Singapore 310490",1.3325896,103.8481317,Low,Toa Payoh,128880,3.41194E-05,Toa Payoh Central,27630,0.000150232,5.89,Central,RCR,129250,8.17,15820.07,No,
+McDonald's Ang Mo Kio Park,"10 Ang Mo Kio Street 12, Singapore 567740",1.3724397,103.8447661,High,Ang Mo Kio,161570,2.84855E-05,Kebun Bahru,22270,0.0001742,6.08,North East,OCR,161900,13.94,11614.06,Yes,
+McDonald's Seletar Mall,"33 Sengkang West Ave, #01-04/05/06 The Seletar Mall, Singapore 797653",1.3910661,103.8760583,Medium,Sengkang,253120,1.88842E-05,Fernvale,61210,7.36642E-05,6.46,North East,OCR,253250,10.59,23914.07,No,Retail
+McDonald's Waterway Point,"83 Punggol Central, B2-07/K4 Waterway Point West Wing, Singapore 828761",1.40669,103.9021738,Medium,Punggol,186270,2.51548E-05,Punggol Town Centre,22730,0.000180237,6.39,North East,OCR,186270,9.34,19943.25,Yes,Retail
+McDonald's Punggol Oasis,"Blk 681 Punggol Dr., #02-37/38 Oasis Terraces, Singapore 821669",1.4024701,103.9128724,Medium,Punggol,186270,2.51548E-05,Waterway East,51270,8.4459E-05,6.39,North East,OCR,186270,9.34,19943.25,No,HDB
+McDonald's Plaza Singapura,"68 Orchard Road, #B1-23/24, Plaza Singapura, 68 Orchard Rd, #B1-23 24 Plaza, Singapore 238839",1.3007111,103.844904,Medium,Museum,620,0.002419355,Dhoby Ghaut,460,0.015217391,0,Central,RCR,300,0.83,361.45,No,Retail
+McDonald's Toa Payoh Lorong,"Blk 109 Lor 1 Toa Payoh, #01-318, Singapore 310109",1.3412056,103.8463979,Medium,Toa Payoh,128880,3.41194E-05,Toa Payoh West,14280,0.000291097,5.89,Central,RCR,129250,8.17,15820.07,No,HDB
+McDonald's Ang Mo Kio Ave 10,"Block 448 Ang Mo Kio Ave 10, #01-1693, Singapore 560448",1.3674385,103.8563633,Low,Ang Mo Kio,161570,2.84855E-05,Chong Boon,25750,0.000134248,6.08,North East,OCR,161900,13.94,11614.06,Yes,
+McDonald's Parklane,"35 Selegie Rd, B1-38 Parklane Shopping Mall, Singapore 188307",1.300661,103.8493367,Medium,Rochor,12640,0.000293829,Selegie,160,0.04375,0,Central,RCR,12810,1.62,7907.41,No,Retail
+McDonald's NEX,"23 Serangoon Central, B2-05/06/07/08 NEX, Singapore 556083",1.3509715,103.8718992,Medium,Serangoon,118340,4.54084E-05,Serangoon Central,24160,0.000197223,6.1,North East,OCR,118400,10.1,11722.77,No,Retail
+McDonald's Toa Payoh SAFRA,"293 Lorong 6 Toa Payoh #01-02, SAFRA, Club. Singapore, Singapore 319387",1.3302726,103.854705,High,Toa Payoh,128880,3.41194E-05,Toa Payoh Central,27630,0.000150232,5.89,Central,RCR,129250,8.17,15820.07,No,
+McDonald's Bishan Junction 8,"9 Bishan Pl, #01-20 Junction 8, Singapore 579837",1.3502609,103.8484718,Medium,Bishan,85750,5.60909E-05,Bishan East,27650,0.00016836,6.28,Central,RCR,85940,7.62,11278.22,No,Retail
+McDonald's Bugis Village,"151-152 Rochor Rd, Singapore 188426",1.3012126,103.8550878,Low,Rochor,12640,0.000293829,Victoria,1640,0.002130428,0,Central,RCR,12810,1.62,7907.41,Yes,Office
+McDonald's Marina Square,"6 Raffles Blvd, #02-156/ #02-157/ #02-166 Marina Square, Singapore 039594",1.2912208,103.8573036,High,Downtown Core,3870,0.000523807,Marina Centre,0,0,0,Central,CCR,3570,4.34,822.58,No,Retail
+McDonald's V Hotel,"70 Jellicoe Rd, Singapore 208767",1.3080123,103.862551,Medium,Kallang,101040,3.88154E-05,Lavender,10160,0.000431046,5.96,Central,RCR,101300,9.17,11046.89,No,
+McDonald's Punggol SAFRA,"9 Sentul Cres, #03-05 SAFRA Punggol, Singapore 828654",1.4101714,103.9058403,High,Punggol,186270,2.51548E-05,Punggol Town Centre,22730,0.000180237,6.39,North East,OCR,186270,9.34,19943.25,Yes,
+McDonald's United Square,"101 Thomson Rd, #B1-11/12 United Square Shopping Mall, Singapore 307591",1.3170116,103.8439755,High,Novena,50790,7.52416E-05,Moulmein,10080,0.00069907,6.22,Central,CCR,50850,8.98,5662.58,No,Retail
+McDonald's Ang Mo Kio,"51 Ang Mo Kio Ave 3, #01-04, 51@AMK 569922",1.3693982,103.8473282,Low,Ang Mo Kio,161570,2.84855E-05,Ang Mo Kio Town Centre,4940,0.001127702,6.08,North East,OCR,161900,13.94,11614.06,Yes,
+McDonald's Bugis Junction,"200 Victoria Street #01-66 Bugis Junction, Singapore 188024",1.2992456,103.8557546,Medium,Downtown Core,3870,0.000523807,Bugis,980,0.004591837,0,Central,CCR,3570,4.34,822.58,No,Office
+McDonald's Raffles City,"252 North Bridge Road 01-49/50/51 Raffles City Shopping Centre, Singapore 179103",1.2931499,103.8533058,High,Downtown Core,3870,0.000523807,City Hall,40,0.175,0,Central,CCR,3570,4.34,822.58,Yes,Retail
+McDonald's Suntec City,"3 Temasek Blvd, Singapore 038983",1.2947699,103.8599943,High,Downtown Core,3870,0.000523807,Marina Centre,0,0,0,Central,CCR,3570,4.34,822.58,No,Office
+McDonald's Zhongshan Mall,"20 Ah Hood Rd, #01-16 Zhongshan Mall, Singapore 329984",1.3267879,103.8467985,Medium,Novena,50790,7.52416E-05,Balestier,32900,0.000144876,6.22,Central,CCR,50850,8.98,5662.58,Yes,Retail
+McDonalds Ang Mo Kio BLK163,"163 Ang Mo Kio Ave 4, #01-438, Singapore 560163",1.3736253,103.8375503,Medium,Ang Mo Kio,161570,2.84855E-05,Kebun Bahru,22270,0.0001742,6.08,North East,OCR,161900,13.94,11614.06,Yes,
+McDonald's Lucky Plaza,"304 Orchard Rd, B1-19 Lucky Plaza, Singapore 238863",1.3045795,103.8340621,Tourist,Orchard,1070,0.00132326,Boulevard,460,0.013232514,0,Central,CCR,590,0.96,614.58,No,Retail
+McDonald's SpringLeaf Tower,"3 Anson Rd, #01-03 Springleaf Tower, Singapore 079909",1.2748671,103.8459685,High,Downtown Core,3870,0.000523807,Tanjong Pagar,800,0.008421875,0,Central,CCR,3570,4.34,822.58,No,Office
+McDonald's LIDO,"350 Orchard Rd, #05-12/13 05/21 and Shaw House, Singapore 238868",1.3059065,103.8314983,Tourist,Orchard,1070,0.00132326,Boulevard,460,0.013232514,0,Central,CCR,590,0.96,614.58,No,Office
+McDonald's Chinatown Point,"133 New Bridge Rd, #01-03 Chinatown Point, Singapore 059432",1.2850191,103.8446308,Medium,Outram,17470,0.000228505,China Square,1260,0.002443941,0,Central,RCR,17420,1.37,12715.33,No,Retail
+McDonald's Northshore Plaza,"407 Northshore Dr, #02-30/31 Northshore Plaza I, Singapore 820407",1.4171246,103.9017228,Medium,Punggol,186270,2.51548E-05,Northshore,9820,0.000392399,6.39,North East,OCR,186270,9.34,19943.25,No,
+McDonald's Forum,"583 Orchard Road, #B1-25, Forum The Shopping Mall, Singapore 238884",1.3061667,103.8284991,High,Orchard,1070,0.00132326,Tanglin,450,0.015555556,0,Central,CCR,590,0.96,614.58,Yes,Retail
+McDonald's Boat Quay,"1 S Canal Rd, Singapore 048508",1.2857571,103.8497842,High,Downtown Core,3870,0.000523807,Phillip,0,0,0,Central,CCR,3570,4.34,822.58,Yes,
+McDonald's Bishan Park,"1378 Ang Mo Kio Ave 1, Singapore 569981",1.3608791,103.8464437,High,Bishan,85750,5.60909E-05,Marymount,29020,0.000176297,6.28,Central,RCR,85940,7.62,11278.22,No,
+McDonald's Tiong Bahru Plaza,"302 Tiong Bahru Road 01-145/146, #147, Singapore 168732",1.2865842,103.8274678,Medium,Bukit Merah,149630,2.85721E-05,Tiong Bahru Station,15020,0.000283599,6.06,Central,RCR,150630,14.34,10504.18,No,Retail
+McDonald's Funan Centre,"Funan 107, North Bridge Rd, #01-16, Singapore 179105",1.2917796,103.8495637,High,Downtown Core,3870,0.000523807,City Hall,40,0.175,0,Central,CCR,3570,4.34,822.58,No,Retail
+McDonald’s Sengkang Grand Mall,"70 Compassvale Bow, #01-34, #01-35, #01-36, Singapore 544692",1.3817411,103.8927792,Medium,Sengkang,253120,1.88842E-05,Compassvale,20810,0.000227649,6.46,North East,OCR,253250,10.59,23914.07,No,
+McDonald's Yishun (YS),"369 Sembawang Rd, #01-01 Sembawang Cottage, Singapore 758382",1.4267075,103.8260655,Medium,Yishun,222960,2.09575E-05,Mandai Estate,2090,0.003477484,6.2,North,OCR,223340,21.24,10515.07,No,
+McDonald's Northpoint,"930 Yishun Ave 2, #01 - 12 / 13 Northpoint, Singapore 769098",1.429862,103.8356422,Low,Yishun,222960,2.09575E-05,Yishun Central,3020,0.001954958,6.2,North,OCR,223340,21.24,10515.07,Yes,Retail
+McDonald's Khatib,"Blk 846 Yishun Ring Rd, #01-3669, Singapore 760846",1.4167918,103.8345779,Low,Yishun,222960,2.09575E-05,Yishun South,42090,0.000103516,6.2,North,OCR,223340,21.24,10515.07,No,HDB
+McDonald's People's Park,"1 Park Road, #01-69 to #01-75, People's Park Complex, Singapore 059108",1.2843363,103.8423916,Medium,Outram,17470,0.000228505,People's Park,260,0.026923077,0,Central,RCR,17420,1.37,12715.33,Yes,Retail
+McDonald's Gardens By The Bay,"18 Marina Gardens Dr, #02-04 Garden By The Bay, Singapore 018954",1.2825155,103.8653757,Tourist,Marina South,0,0,Marina South,0,0,0,Central,RCR,0,1.62,0,No,
+"McDonald's Ridout Tea Garden, Queensway","580 Queensway, Ridout Tea Garden, Singapore 149066",1.304278,103.8019459,Medium,Queenstown,96870,4.3695E-05,Margaret Drive,22500,0.000184484,6.25,Central,RCR,96970,20.43,4746.45,Yes,
+McDonald's Metropolis,"9 North Buona Vista Drive #01-08 Tower 1 The Metropolis, Singapore 138588",1.3061511,103.7910856,Medium,Queenstown,96870,4.3695E-05,One North,760,0.009279778,6.25,Central,RCR,96970,20.43,4746.45,No,
+McDonald's Alocassia,"383 Bukit Timah Rd, #01-09B Alocassia Apartments, Singapore 259727",1.3195389,103.827332,Low,Tanglin,23150,0.000122079,Nassim,10090,0.000704856,0,Central,CCR,23270,7.63,3049.8,No,Retail
+McDonald's Farrer Road,"10 Jln Serene, #01-01 Serene Centre, Singapore 258748",1.3223957,103.8135353,Medium,Tanglin,23150,0.000122079,Tyersall,4090,0.001700133,0,Central,CCR,23270,7.63,3049.8,Yes,Retail
+McDonald's Great World City,"1 Kim Seng Promenade #01-124/25/26 Great World City, 1 Kim Seng Promenade, #01 - 162, Singapore 237994",1.2933335,103.8325368,High,Singapore River,3580,0.000413143,Robertson Quay,3460,0.002023121,0,Central,RCR,3510,0.96,3656.25,No,
+McDonald's Woodlands Mart,"Block 768 Woodlands Avenue 6 01-01 Woodlands Mart, Singapore 730768",1.4460315,103.7984815,Low,Woodlands,252510,1.96814E-05,Woodlands East,98580,4.51965E-05,6.53,North,OCR,252570,13.59,18584.99,Yes,
+McDonald's Singapore Polytechnic,"500 Dover Road Teaching Block 16, 500 Dover Rd, Unit 13 Level 1 Singapore Polytechnic, Singapore 139651",1.3100904,103.7785341,Student,Queenstown,96870,4.3695E-05,Singapore Polytechnic,0,0,6.25,Central,RCR,96970,20.43,4746.45,No,
+McDonald's Sun Plaza,"30 Sembawang Dr, #01 - 16 / 17 Sun Plaza, Singapore 757713",1.4482725,103.819938,Medium,Sembawang,108490,4.48404E-05,Sembawang Central,35300,0.000130191,6.7,North,OCR,108650,12.34,8804.7,Yes,
+McDonald's ARC,"460 Alexandra Rd, #01 - 25, Singapore 119963",1.2745043,103.8015418,High,Queenstown,96870,4.3695E-05,Pasir Panjang 2,3040,0.002460613,6.25,Central,RCR,96970,20.43,4746.45,No,
+McDonald's Woodlands Civic Centre,"900 South Woodlands Drive #01-01 Woodlands Civic Centre, Singapore 730900",1.435152,103.787195,Low,Woodlands,252510,1.96814E-05,Woodlands Regional Centre,0,0,6.53,North,OCR,252570,13.59,18584.99,No,
+McDonald's Fajar,"Blk 445 Fajar Rd, #01-520, Singapore 670445",1.3838178,103.7704254,Medium,Bukit Panjang,137390,3.49293E-05,Fajar,27070,0.000159235,6.31,West,OCR,137730,8.99,15320.36,Yes,HDB
+McDonald's West Coast Park,"71 W Coast Hwy, Singapore 126844",1.2975443,103.7633584,High,Queenstown,96870,4.3695E-05,Pandan,0,0,6.25,Central,RCR,96970,20.43,4746.45,Yes,
+McDonald's Bukit Panjang Plaza,"1 Jelebu Road, #02-01, Bukit Panjang Plaza, Singapore 677743",1.3794957,103.7644471,Low,Bukit Panjang,137390,3.49293E-05,Jelebu,30640,0.000161928,6.31,West,OCR,137730,8.99,15320.36,No,
+McDonald's Causeway Point,"1 Woodlands Square, #01 - 35 Causeway Point, Singapore 738099",1.4364427,103.7864043,Low,Woodlands,252510,1.96814E-05,Woodlands Regional Centre,0,0,6.53,North,OCR,252570,13.59,18584.99,Yes,
+McDonald's Queensway Shopping Centre,"1 Queensway, #02-46, Queensway Shopping Centre, Singapore 149053",1.2872226,103.8033568,Low,Queenstown,96870,4.3695E-05,Queensway,280,0.025,6.25,Central,RCR,96970,20.43,4746.45,No,
+McDonald's Beauty World,"144 Upper Bukit Timah Rd, #01-39/40 Beauty World Centre, Singapore 588177",1.3422905,103.7761285,Medium,Bukit Timah,79240,5.67871E-05,Anak Bukit,21770,0.000307554,5.33,Central,CCR,79940,17.53,4560.18,No,
+McDonald's Choa Chu Kang CC,"35 Teck Whye Ave, #01-01 Chua Chu Kang Community Club, Singapore 688892",1.3811344,103.751914,Low,Choa Chu Kang,190330,2.56104E-05,Teck Whye,23980,0.000167762,6.37,West,OCR,190780,6.11,31224.22,Yes,State
+McDonald's Clementi Ave 3,"Blk 451 Clementi Ave 3, #01-309, Singapore 120451",1.3124073,103.7656754,Medium,Clementi,94130,4.44334E-05,Clementi Central,14790,0.000290408,6.22,West,OCR,94330,9.49,9939.94,No,HDB
+McDonald's SAFRA Yishun,"60 Yishun Ave 4, #01-11 Safra, Yishun 769027",1.4232734,103.840973,High,Yishun,222960,2.09575E-05,Yishun South,42090,0.000103516,6.2,North,OCR,223340,21.24,10515.07,Yes,
+McDonald's Clementi Mall,"3155 Commonwealth Avenue West #01-06/07/08/09 The Clementi Mall, Singapore 129588",1.314918,103.7643089,Medium,Clementi,94130,4.44334E-05,Clementi Central,14790,0.000290408,6.22,West,OCR,94330,9.49,9939.94,Yes,Retail
+McDonald's Greenridge Shopping Centre,"Blk 524A Jelapang Road #01-02A Greenridge Shopping Centre, Singapore 671524",1.3853755,103.7663006,Medium,Bukit Panjang,137390,3.49293E-05,Saujana,25420,0.000184075,6.31,West,OCR,137730,8.99,15320.36,No,HDB
+McDonald's Choa Chu Kang 62,"Blk 623 Choa Chu Kang Street 62, #01-262, Singapore 680623",1.3981564,103.7471165,Low,Choa Chu Kang,190330,2.56104E-05,Yew Tee,39940,0.000121709,6.37,West,OCR,190780,6.11,31224.22,Yes,HDB
+McDonald's Jurong East 24,"256 Jurong East St 24, #01-381, Singapore 600256",1.3441045,103.7382863,Low,Jurong East,76560,6.13382E-05,Yuhua East,24150,0.000173227,6.71,West,OCR,76800,17.83,4307.35,Yes,
+McDonald's Bukit Batok West,"Blk 152 Bukit Batok Street 11, #01-280, Singapore 650152",1.3478795,103.7443841,Low,Bukit Batok,165160,2.67798E-05,Bukit Batok West,14640,0.000267672,6.13,West,OCR,165280,11.13,14849.96,No,HDB
+McDonald's Regal,"3501 Jalan Bukit Merah, #01-01, Singapore 159460",1.2836726,103.8182785,Low,Bukit Merah,149630,2.85721E-05,Bukit Merah,1020,0.004632834,6.06,Central,RCR,150630,14.34,10504.18,Yes,
+McDonald's Vista Point,"548 Woodlands Drive 44, Singapore 730548",1.4306343,103.7934851,Low,Woodlands,252510,1.96814E-05,Woodlands South,40550,0.000119026,6.53,North,OCR,252570,13.59,18584.99,No,
+McDonald's TradeHub 21,"28 Boon Lay Way, #01-173 Tradehub 21, Singapore 609971",1.3281888,103.7516581,High,Clementi,94130,4.44334E-05,Clementi Central,14790,0.000290408,6.22,West,OCR,94330,9.49,9939.94,No,
+McDonald's Bukit Batok,"Blk 632 Bukit Batok Central 01-138/#01-140 / #01-142, Singapore 650632",1.3495284,103.7504166,Medium,Bukit Batok,165160,2.67798E-05,Bukit Batok Central,27260,0.000154096,6.13,West,OCR,165280,11.13,14849.96,Yes,HDB
+McDonald's JEM,"50 Jurong Gateway Rd, #01-63, #02-55, Singapore 608549",1.3333971,103.7427873,Medium,Jurong East,76560,6.13382E-05,Jurong Gateway,560,0.0125,6.71,West,OCR,76800,17.83,4307.35,Yes,Retail
+McDonald's Jurong Point,"1 Jurong West Central 2, #01-31 Jurong Point, Singapore 648886",1.3398558,103.7064063,Medium,Jurong West,258540,1.92584E-05,Jurong West Central,62460,7.44646E-05,6.35,West,OCR,258700,14.69,17610.62,No,Retail
+McDonald's Hillion,"17 Petir Rd, #B1-25/26/27 Hillion Mall, Singapore 678278",1.3784819,103.7632117,Medium,Bukit Panjang,137390,3.49293E-05,Jelebu,30640,0.000161928,6.31,West,OCR,137730,8.99,15320.36,No,Retail
+McDonald's Keat Hong,"818 Choa Chu Kang Ave 1, #01-02 Keat Hong Mirage, Singapore 680818",1.3780819,103.7488391,Medium,Choa Chu Kang,190330,2.56104E-05,Keat Hong,38480,0.000121202,6.37,West,OCR,190780,6.11,31224.22,Yes,
+McDonald's Bukit Gombak,"374 Bukit Batok Street 31, #01-198/202, Singapore 650374",1.3575525,103.750601,Medium,Bukit Batok,165160,2.67798E-05,Gombak,9890,0.000573037,6.13,West,OCR,165280,11.13,14849.96,Yes,
+McDonald's Jcube,"2 Jurong East Central 1, #01-09 JCube, Singapore 609731",1.3330425,103.7401835,Medium,Jurong East,76560,6.13382E-05,Jurong Gateway,560,0.0125,6.71,West,OCR,76800,17.83,4307.35,No,Retail
+McDonald's IMM,"2 Jurong East Street 21, #01-18 IMM Building, Singapore 609601",1.3354104,103.7462797,Low,Jurong East,76560,6.13382E-05,Toh Guan,14260,0.000319748,6.71,West,OCR,76800,17.83,4307.35,No,Retail
+McDonald's Resorts World Sentosa,"8 Sentosa Gateway, #B1 - 211, 212, 213, 214, Singapore 098138",1.257376,103.8201731,Tourist,Southern Islands,2260,0.001424348,Sentosa,2260,0.003201112,0,Central,CCR,2240,6.07,369.03,No,
+McDonald's Choa Chu Kang Lot 1,"10 Choa Chu Kang Ave 4, #01-21 MRT Station. Singpaore, Singapore 689810",1.3852487,103.7443487,Medium,Choa Chu Kang,190330,2.56104E-05,Choa Chu Kang Central,22400,0.000243423,6.37,West,OCR,190780,6.11,31224.22,No,Retail
+McDonald's Gek Poh,"762 Jurong West Street 75, #02-250 Gek Poh Shopping Centre, Singapore 640762",1.3489162,103.6976086,Low,Jurong West,258540,1.92584E-05,Yunnan,66500,6.9831E-05,6.35,West,OCR,258700,14.69,17610.62,No,
+McDonald's NTU,"Block N 2, 1,#01 76 Nanyang Dr, #08 Nanyang Technological University, Singapore 637331",1.3470369,103.68034,Student,Western Water Catchment,610,0,Murai,610,0,0,West,OCR,560,69.46,8.06,No,
+McDonald's WoodGrove,"30 Woodlands Ave 1, #01-06 The Woodgrove, Singapore 739065",1.4295794,103.7813318,Medium,Woodlands,252510,1.96814E-05,Woodgrove,33150,0.00014638,6.53,North,OCR,252570,13.59,18584.99,No,
+McDonald's 888 Plaza,"Blk 888 Woodlands Drive 50, #01-737A, Singapore 730888",1.4377241,103.7952735,Low,Woodlands,252510,1.96814E-05,Midview,34650,0.000125339,6.53,North,OCR,252570,13.59,18584.99,No,HDB
+McDonald's Woodlands North Plaza,"Blk 883 Woodlands Street 82, #01-468, Singapore 730883",1.442578,103.7911885,Low,Woodlands,252510,1.96814E-05,Midview,34650,0.000125339,6.53,North,OCR,252570,13.59,18584.99,No,HDB
+McDonald's Sembawang Shopping Centre,"604 Sembawang Road, Sembawang Shopping Centre, #01-27, Singapore 758459",1.4418355,103.8248907,Medium,Sembawang,108490,4.48404E-05,Sembawang Springs,9690,0.000707271,6.7,North,OCR,108650,12.34,8804.7,No,Retail
+McDonald's Yishun Ring Road,"Blk 293 Yishun Street 22, #01-237, Singapore 760293",1.4360915,103.8377479,Low,Yishun,222960,2.09575E-05,Northland,27680,0.000139275,6.2,North,OCR,223340,21.24,10515.07,Yes,HDB
+McDonald's Blossom Spring,"461 Yishun Ave 6, #01-03 Blossom Spring@Yishun, Singapore 760461",1.4282704,103.8498645,Medium,Yishun,222960,2.09575E-05,Yishun East,62940,6.51682E-05,6.2,North,OCR,223340,21.24,10515.07,No,
+McDonald's Canberra,"133 Canberra View, #01-01/02 03/28, Singapore 750133",1.4429738,103.8306379,Medium,Sembawang,108490,4.48404E-05,Sembawang East,21730,0.000169761,6.7,North,OCR,108650,12.34,8804.7,No,
+McDonald's Limbang,"Block 533 Choa Chu Kang Street 51, #01-10 Limbang Shopping Centre, Singapore 680533",1.3922588,103.7431268,Medium,Choa Chu Kang,190330,2.56104E-05,Choa Chu Kang North,31360,0.000155138,6.37,West,OCR,190780,6.11,31224.22,No,
+McDonald's LeQuest,"4 Bukit Batok Street 41, #01-42, Singapore 657991",1.3557128,103.7408413,Medium,Bukit Batok,165160,2.67798E-05,Brickworks,27850,0.000132494,6.13,West,OCR,165280,11.13,14849.96,No,
+McDonald's Jurong Green CC,"6A Jurong West Ave 1, Jurong Green CC, Singapore 649520",1.3505115,103.7254572,Medium,Jurong West,258540,1.92584E-05,Hong Kah,53160,8.00305E-05,6.35,West,OCR,258700,14.69,17610.62,Yes,
+McDonald's Jurong Spring CC,"01 Jurong West Street 52 05, #8 Jurong Spring Community Club, Singapore 649296",1.3483547,103.7183772,Medium,Jurong West,258540,1.92584E-05,Hong Kah,53160,8.00305E-05,6.35,West,OCR,258700,14.69,17610.62,Yes,State
+McDonald's Pioneer Mall,"638 Jurong West Street 61, #01-01/02 Pioneer Mall, Singapore 640638",1.3415661,103.6969298,Medium,Jurong West,258540,1.92584E-05,Jurong West Central,62460,7.44646E-05,6.35,West,OCR,258700,14.69,17610.62,Yes,Retail
+McDonald's Fairprice Hub,"1 Joo Koon Cir, #01-27/28/29/30/31 FairPrice Hub, Singapore 629117",1.3273406,103.6782616,Medium,Pioneer,0,0,Joo Koon,0,0,0,West,OCR,0,12.1,0,No,
+McDonald's Jurong Central Park,"291 Boon Lay Way, Singapore 649849",1.3391576,103.7086677,High,Jurong West,258540,1.92584E-05,Kian Teck,0,0,6.35,West,OCR,258700,14.69,17610.62,Yes,
+McDonald's Jurong Bowl,"1 Yuan Ching Rd, Jurong Family Bowl, Singapore 618640",1.3263056,103.7246177,High,Jurong West,258540,1.92584E-05,Taman Jurong,39480,0.000116705,6.35,West,OCR,258700,14.69,17610.62,Yes,
+McDonald's Harbour Front Centre,"01-87, #01-88 and #01-89 1, Maritime Square, Harbourfront Centre, Singapore 099253",1.2642175,103.8203582,High,Bukit Merah,149630,2.85721E-05,Maritime Square,4240,0.001500756,6.06,Central,RCR,150630,14.34,10504.18,No,
+McDonald's Vivocity,"1 HarbourFront Walk, B2-40/41/42 VivoCity, Singapore 098585",1.2647989,103.8214814,High,Bukit Merah,149630,2.85721E-05,Maritime Square,4240,0.001500756,6.06,Central,RCR,150630,14.34,10504.18,No,
+McDonald's Shell Havelock,"548 Havelock Rd, Singapore 169637",1.2900261,103.8325063,High,Bukit Merah,149630,2.85721E-05,Bukit Ho Swee,13850,0.000235687,6.06,Central,RCR,150630,14.34,10504.18,No,
+McDonald's Tampines (near CPF Building),"Blk 513 Tampines Central 1, #01-150, Singapore 520513",1.3536087,103.9441485,Medium,Tampines,265690,1.79808E-05,Tampines East,127070,3.31487E-05,6.53,East,OCR,265850,20.89,12726.18,Yes,HDB
+McDonald’s Admiralty Place,"678A Woodlands Ave 6, #01-05, Singapore 731678",1.4402264,103.8010912,Medium,Woodlands,252510,1.96814E-05,Woodlands East,98580,4.51965E-05,6.53,North,OCR,252570,13.59,18584.99,No,
