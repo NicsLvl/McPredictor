@@ -5,7 +5,22 @@ import json
 import requests
 import pandas as pd
 import numpy as np
+
+import matplotlib.pyplot as plt
+import seaborn as sns
 from geopy.distance import geodesic
+
+from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GridSearchCV, StratifiedKFold
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from imblearn.over_sampling import SMOTE
+from imblearn.pipeline import Pipeline as imbPipeline
+from sklearn.model_selection import GridSearchCV
+
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.metrics import balanced_accuracy_score
+from sklearn.model_selection import cross_val_score
 
 class BusStopFile:
 
@@ -185,42 +200,105 @@ class Distance_Data:
         traffic_out.columns = [f'out_{day_type}_{time_type}_{distance}']
 
         return traffic_in, traffic_out
-            
-class EDA_Data:
 
-    def __init__(self, mcd_df):
-        # select only numerical columns
-        self.num = mcd_df.select_dtypes(include=['float64','int64'])
-        self.numcol = mcd_df.select_dtypes(include=['float64','int64']).columns
-        
-        # select only categorical columns
-        self.cat = mcd_df.select_dtypes(include=['object'])
-        self.catcol = mcd_df.select_dtypes(include=['object']).columns
-        
-        self.classification = mcd_df['Classification']
-        self.altclass = mcd_df['AltClass'] 
-    
-        self.total = mcd_df
+class Evaluate:
+
+    def __init__(self):
+        pass
+
+    def mean_metrics(self, wrong_prediction, metrics, mcd_df_model, evaluate, right_evaluate):
+        for i in metrics:
+        # print the average
+            actual_mean = mcd_df_model[i].mean()
+            right_mean = right_evaluate[right_evaluate['y_pred']==wrong_prediction][i].mean()
+            wrong_mean = evaluate[evaluate['y_pred']==wrong_prediction][i].mean()
+            print(f"the % difference between the average of {i} and the wrong prediction of {wrong_prediction} is {(actual_mean-wrong_mean)/actual_mean*100:.2f}%")
+            print(f"the % difference between the average of {i} and the right prediction of {wrong_prediction} is {(actual_mean-right_mean)/actual_mean*100:.2f}%")
+            print()
+
+    def median_metrics(self, wrong_prediction, metrics, mcd_df_model, evaluate, right_evaluate):
+        for i in metrics:
+        # print the median
+            actual_mean = mcd_df_model[i].median()
+            right_mean = right_evaluate[right_evaluate['y_pred']==wrong_prediction][i].median()
+            wrong_mean = evaluate[evaluate['y_pred']==wrong_prediction][i].median()
+            print(f"the % difference between the median of {i} and the wrong prediction of {wrong_prediction} is {(actual_mean-wrong_mean)/actual_mean*100:.2f}%")
+            print(f"the % difference between the median of {i} and the right prediction of {wrong_prediction} is {(actual_mean-right_mean)/actual_mean*100:.2f}%")
+            print()
+
 class Model:
 
     def __init__(self):
         pass
 
-    def results(self, model, cat_vars, num_vars):
-        cat_vars = ['Region Type','Planning Area','Region']
-        num_vars = ['NUM_STOPS', 'num_hdb','TOTAL_TAP_OUT_VOLUME','TOTAL_TAP_IN_VOLUME']
+    def results(self, model, mcd_df_model, params, num_transformer, cat_transformer, rs, balance = 'n'):
+        X = mcd_df_model.drop('classification', axis=1)
+        y = mcd_df_model['classification']
 
-class Test:
-    def __init__(self):
-        pass
+        # remove the categorical aspect of y since we don't want it to be treated as a category
+        y = y.astype('object')
 
-    def test(self, matrix_df,i):
-        # matrix_df = matrix_df
-        print(matrix_df)
-        matrix_df.iloc[0,0] = i
-        # output_df = output_df.transpose()
-        # output_df = output_df.sum(axis=1)
-        # output_df = output_df.to_frame()
-        return matrix_df
+        # convert X.columns to a list
+        X.col = list(X.columns)
 
-    
+        numerical_features = X.select_dtypes(include=['int64', 'float64']).columns.tolist()
+        categorical_features = X.select_dtypes(include=['object','category']).columns.tolist()
+        print(f'numerical features used are {numerical_features}')
+        print(f'categorical features used are {categorical_features}')
+        print()
+
+        # split the data into train and test
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=rs, stratify=y)
+        
+        # Preprocessing, there's actually no need for RF but its part of my own template
+        preprocessor = ColumnTransformer(transformers=[
+            ('tnf1',num_transformer,numerical_features),
+            ('tnf3',cat_transformer,categorical_features)
+            ])
+        
+        skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=rs)
+        # Do class balancing
+        if balance == 'y':
+            smote = SMOTE(random_state=rs)
+            pipeline = imbPipeline(steps=[('preprocessor', preprocessor),("smote",smote),('classifier', model)])
+        else:
+            pipeline = Pipeline(steps=[('preprocessor', preprocessor),('classifier', model)])
+
+        # instantiate the gridsearch
+        if balance == 'y':
+            grid = GridSearchCV(pipeline, params, cv=skf, scoring ='accuracy', verbose=1)
+        else:
+            grid = GridSearchCV(pipeline, params, cv=skf, scoring ='accuracy', verbose=1)
+
+        # fit model to data
+        grid.fit(X_train, y_train)
+
+        # predict the test data
+        y_pred = grid.predict(X_test)
+
+        # print the best parameters
+        print('The best training parameters and cross validated accuracy score are:')
+        print(grid.best_params_)
+        print(f'the range of scores can be {cross_val_score(grid.best_estimator_, X_train, y_train, cv=skf)}')
+        print(f'{grid.best_score_}')
+
+        y_pred = grid.best_estimator_.predict(X_test)
+        print(classification_report(y_test, y_pred))
+        print('Balanced Accuracy: {:.2f}\n'.format(balanced_accuracy_score(y_test, y_pred)))
+
+        # print confusion matrix with the predicted and actual correct with colors
+        cm = confusion_matrix(y_test, y_pred)
+        plt.figure(figsize=(10,10))
+        sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False)
+        plt.title('Confusion Matrix')
+
+        plt.xlabel('Predicted')
+        plt.ylabel('Actual')
+
+        # put labels on the predicted and actual labels
+        plt.xticks([0.5,1.5,2.5], ['High', 'Low', 'Medium'])
+        plt.yticks([0.5,1.5,2.5], ['High', 'Low', 'Medium'])
+
+        plt.show()
+
+        return grid
