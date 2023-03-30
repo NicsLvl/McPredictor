@@ -117,7 +117,7 @@ class Distance_Data:
         # print(f'Empty matrix initialized with shape {self.matrix.shape}')
     
     def num_count(self, distance, mcd_df, hdb_df, col_name):
-        
+
         # input a value of "1" in the matrix if the distance between the bus stop and mcd is less than the distance specified
         for mcd in range(len(mcd_df)):
             count=0
@@ -128,8 +128,21 @@ class Distance_Data:
                     count+=1
             self.matrix.iloc[mcd,0] = count
             self.matrix.columns = [f'{col_name}{distance}']
+            
         
         return self.matrix
+
+    def single_num_count(self, distance, latitude, longitude, hdb_df, col_name):
+
+        # input a value of "1" in the matrix if the distance between the bus stop and mcd is less than the distance specified
+        count=0
+        for hdb in range(len(hdb_df)):
+            dist = geodesic((hdb_df['latitude'][hdb], hdb_df['longitude'][hdb]), \
+                            (latitude, longitude)).km
+            if dist < distance:
+                count+=1
+        
+        return count
     
     def traffic_count(self, mcd_df, stop_df, bus_data, distance_list):
         
@@ -161,6 +174,38 @@ class Distance_Data:
             # add it to the empty array
             to_df_array = np.append(to_df_array, mcd_array, axis=0)
             print(f'Number of McDonalds done: {len(to_df_array)}')
+        
+        return to_df_array
+    
+    def single_traffic_count(self, lat, long, stop_df, bus_data, distance_list):
+        
+        # create an empty numpy array
+        to_df_array = np.empty((0,384))
+
+        # create an empty 5082 x 4 numpy array
+        traffic_array = np.zeros((len(stop_df), len(distance_list)))
+        
+        for stop in range(len(stop_df)):
+            dist = geodesic((stop_df['latitude'][stop], stop_df['longitude'][stop]), \
+                            (lat, long)).km
+            if dist<distance_list[0]:
+                traffic_array[stop,0] = 1
+                if dist<distance_list[1]:
+                    traffic_array[stop,1] = 1
+                    if dist<distance_list[2]:
+                        traffic_array[stop,2] = 1
+                        if dist<distance_list[3]:
+                            traffic_array[stop,3] = 1
+        
+        # multiply the 2 arrays to get a 96 x 4 array
+        mcd_array = np.dot(bus_data,traffic_array)
+
+        # convert mcd_array to a 1 x 384 array by unstacking the rows
+        mcd_array = mcd_array.reshape(1, -1)
+
+        # add it to the empty array
+        to_df_array = np.append(to_df_array, mcd_array, axis=0)
+        print(f'Number of McDonalds done: {len(to_df_array)}')
         
         return to_df_array
             
@@ -207,31 +252,110 @@ class Evaluate:
         pass
 
     def mean_metrics(self, wrong_prediction, metrics, mcd_df_model, evaluate, right_evaluate):
-        for i in metrics:
-        # print the average
-            actual_mean = mcd_df_model[i].mean()
-            right_mean = right_evaluate[right_evaluate['y_pred']==wrong_prediction][i].mean()
-            wrong_mean = evaluate[evaluate['y_pred']==wrong_prediction][i].mean()
-            print(f"the % difference between the average of {i} and the wrong prediction of {wrong_prediction} is {(actual_mean-wrong_mean)/actual_mean*100:.2f}%")
-            print(f"the % difference between the average of {i} and the right prediction of {wrong_prediction} is {(actual_mean-right_mean)/actual_mean*100:.2f}%")
-            print()
+        
+        for j in evaluate.index:
+            w = []
+            r = []
+            l = []
+            # print out the McDonald's we are evaluating
+            title = evaluate.loc[j,:].title
+            print(title)
+
+            for i in metrics:
+            # print the difference between their values and the average
+                # the mean of the whole dataset
+                actual_mean = mcd_df_model[i].mean()
+                # the mean of the right predictions
+                right_mean = right_evaluate[right_evaluate['y_pred']==wrong_prediction][i].mean()
+                # the mean of the wrong predictions
+                wrong_mean = evaluate.loc[j,i]
+                wrong = (actual_mean-wrong_mean)/actual_mean*100
+                right = (actual_mean-right_mean)/actual_mean*100
+                w.append(wrong)
+                r.append(right)
+                l.append(i)
+                print(f"the % difference between {i} for right predicted values and {title} is {wrong-right:.2f}%")
+                # print(f"the % difference between the average of {i} and the wrong prediction of {wrong_prediction} is {(actual_mean-wrong_mean)/actual_mean*100:.2f}%")
+                # print(f"the % difference between the average of {i} and the right prediction of {wrong_prediction} is {(actual_mean-right_mean)/actual_mean*100:.2f}%")
+            
+
+            # set the figure size to be wider
+            plt.figure(figsize=(20,10))
+            # Set the width of the bars
+            bar_width = 0.35
+
+            # Set the positions of the bars on the x-axis
+            r1 = range(len(w))
+            r2 = [x + bar_width for x in r1]
+
+            # Create the clustered bar chart
+            plt.bar(r1, w, color='red', width=bar_width, edgecolor='grey', label='Wrong Prediction % difference from Mean')
+            plt.bar(r2, r, color='green', width=bar_width, edgecolor='grey', label='Right Prediction % difference from Mean')
+            
+            # rotate xticks by 45 degrees
+            plt.xticks([r + bar_width for r in range(len(w))], l, rotation=45)
+
+            # Add a legend
+            plt.legend()
+
+            # Show the chart
+            plt.show()
+        
+            
 
     def median_metrics(self, wrong_prediction, metrics, mcd_df_model, evaluate, right_evaluate):
+        w = []
+        r = []
+        l = []
         for i in metrics:
         # print the median
-            actual_mean = mcd_df_model[i].median()
-            right_mean = right_evaluate[right_evaluate['y_pred']==wrong_prediction][i].median()
-            wrong_mean = evaluate[evaluate['y_pred']==wrong_prediction][i].median()
-            print(f"the % difference between the median of {i} and the wrong prediction of {wrong_prediction} is {(actual_mean-wrong_mean)/actual_mean*100:.2f}%")
-            print(f"the % difference between the median of {i} and the right prediction of {wrong_prediction} is {(actual_mean-right_mean)/actual_mean*100:.2f}%")
-            print()
+            # the median of the whole dataset
+            actual_median = mcd_df_model[i].median()
+            # the median of the right predictions
+            right_median = right_evaluate[right_evaluate['y_pred']==wrong_prediction][i].median()
+            # the median of the wrong predictions
+            wrong_median = evaluate[evaluate['y_pred']==wrong_prediction][i].median()
+            if actual_median == 0:
+                pass
+            else:
+                wrong = (actual_median-wrong_median)/actual_median*100
+                right = (actual_median-right_median)/actual_median*100
+                w.append(wrong)
+                r.append(right)
+                l.append(i)
+                print(f"the % difference between {i} for right and wrong predictions is {wrong-right:.2f}%")
+            # print(f"the % difference between the median of {i} and the wrong prediction of {wrong_prediction} is {(actual_median-wrong_median)/actual_median*100:.2f}%")
+            # print(f"the % difference between the median of {i} and the right prediction of {wrong_prediction} is {(actual_median-right_median)/actual_median*100:.2f}%")
+        
+        
+        # set the figure size to be wider
+        plt.figure(figsize=(20,10))
+        # Set the width of the bars
+        bar_width = 0.35
+
+        # Set the positions of the bars on the x-axis
+        r1 = range(len(w))
+        r2 = [x + bar_width for x in r1]
+
+        # Create the clustered bar chart
+        plt.bar(r1, w, color='red', width=bar_width, edgecolor='grey', label='wrong_prediction_median_difference')
+        plt.bar(r2, r, color='green', width=bar_width, edgecolor='grey', label='right_prediction_median_difference')
+        
+        # rotate xticks by 45 degrees
+        plt.xticks([r + bar_width for r in range(len(w))], l, rotation=45)
+
+        # Add a legend
+        plt.legend()
+
+        # Show the chart
+        plt.show()
 
 class Model:
 
     def __init__(self):
         pass
 
-    def results(self, model, mcd_df_model, params, num_transformer, cat_transformer, rs, balance = 'n'):
+    def results(self, split, model, mcd_df_model, params, num_transformer, cat_transformer, rs, balance = 'n'):
         X = mcd_df_model.drop('classification', axis=1)
         y = mcd_df_model['classification']
 
@@ -239,7 +363,7 @@ class Model:
         y = y.astype('object')
 
         # convert X.columns to a list
-        X.col = list(X.columns)
+        # X.col = list(X.columns)
 
         numerical_features = X.select_dtypes(include=['int64', 'float64']).columns.tolist()
         categorical_features = X.select_dtypes(include=['object','category']).columns.tolist()
@@ -248,27 +372,28 @@ class Model:
         print()
 
         # split the data into train and test
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=rs, stratify=y)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=split, random_state=rs, stratify=y)
         
-        # Preprocessing, there's actually no need for RF but its part of my own template
-        preprocessor = ColumnTransformer(transformers=[
-            ('tnf1',num_transformer,numerical_features),
-            ('tnf3',cat_transformer,categorical_features)
-            ])
-        
+        if num_transformer == None:
+            pass
+        else:
+        # Preprocessing
+            preprocessor = ColumnTransformer(transformers=[
+                ('tnf1',num_transformer,numerical_features),
+                ('tnf3',cat_transformer,categorical_features)
+                ])
+            
         skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=rs)
         # Do class balancing
         if balance == 'y':
             smote = SMOTE(random_state=rs)
             pipeline = imbPipeline(steps=[('preprocessor', preprocessor),("smote",smote),('classifier', model)])
+        elif num_transformer == None:
+            pipeline = Pipeline(steps=[('classifier', model)])
         else:
             pipeline = Pipeline(steps=[('preprocessor', preprocessor),('classifier', model)])
-
-        # instantiate the gridsearch
-        if balance == 'y':
-            grid = GridSearchCV(pipeline, params, cv=skf, scoring ='accuracy', verbose=1)
-        else:
-            grid = GridSearchCV(pipeline, params, cv=skf, scoring ='accuracy', verbose=1)
+        
+        grid = GridSearchCV(pipeline, params, cv=skf, scoring ='accuracy', verbose=1)
 
         # fit model to data
         grid.fit(X_train, y_train)
@@ -300,5 +425,5 @@ class Model:
         plt.yticks([0.5,1.5,2.5], ['High', 'Low', 'Medium'])
 
         plt.show()
-
+  
         return grid
