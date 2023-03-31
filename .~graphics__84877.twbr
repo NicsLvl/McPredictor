@@ -20,7 +20,7 @@
     <WindowsPersistSimpleIdentifiers />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
-  <repository-location id='McDonaldsinSingapore' path='/workbooks' revision='1.0' />
+  <repository-location id='McDonaldsinSingapore_16802273308130' path='/workbooks' revision='1.3' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -6277,9 +6277,18 @@
       <aliases enabled='yes' />
       <column caption='24 Hours?' datatype='string' name='[24 hours?]' role='dimension' type='nominal' />
       <column caption='24 Hours' datatype='string' name='[24_hours]' role='dimension' type='nominal' />
+      <column caption='Minimum' datatype='real' name='[Calculation_5972687909839069184]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='min([value])' />
+      </column>
+      <column caption='Biggest Diff' datatype='real' name='[Calculation_5972687909839200258]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Minimum (copy)_5972687909839138817]-[Calculation_5972687909839069184]' />
+      </column>
       <column caption='Menu Type' datatype='string' name='[Classification]' role='dimension' type='nominal' />
       <column caption='Classification' datatype='string' name='[F1]' role='dimension' type='nominal' />
       <column datatype='string' name='[F8]' role='dimension' type='nominal' />
+      <column caption='Maximum' datatype='real' name='[Minimum (copy)_5972687909839138817]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='max([value])' />
+      </column>
       <column caption='WEEKDAY 0 in 0.2' datatype='real' name='[WEEKDAY_0_in_0.2]' role='measure' type='quantitative' />
       <column caption='WEEKDAY 0 in 0.5' datatype='real' name='[WEEKDAY_0_in_0.5]' role='measure' type='quantitative' />
       <column caption='WEEKDAY 0 in 1' datatype='real' name='[WEEKDAY_0_in_1]' role='measure' type='quantitative' />
@@ -12476,7 +12485,7 @@
               <family>Sheet1</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>164</approx-count>
+              <approx-count>166</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -13451,10 +13460,10 @@
   <actions>
     <action caption='Filter 1 (generated)' name='[Action1_DF381D5666DB4216B9AA7608B52FBE04]'>
       <activation auto-clear='true' type='on-select' />
-      <source dashboard='3' type='sheet' worksheet='Word Cloud' />
+      <source dashboard='4' type='sheet' worksheet='Word Cloud' />
       <command command='tsc:tsl-filter'>
         <param name='special-fields' value='all' />
-        <param name='target' value='3' />
+        <param name='target' value='4' />
       </command>
     </action>
   </actions>
@@ -13492,6 +13501,7 @@
         <style>
           <style-rule element='cell'>
             <format attr='width' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]' value='117' />
+            <format attr='text-format' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[avg:value:qk]' value='C18441%' />
           </style-rule>
           <style-rule element='label'>
             <format attr='display' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[:Measure Names]' value='false' />
@@ -13516,6 +13526,13 @@
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:avg:value:qk]' value='Cheapest to Expensive'>
+              <formatted-text>
+                <run>Cheapest to Expensive</run>
+              </formatted-text>
+            </format>
           </style-rule>
         </style>
         <panes>
@@ -13552,8 +13569,8 @@
                 <format attr='mark-labels-mode' value='all' />
                 <format attr='mark-labels-range-scope' value='pane' />
                 <format attr='mark-labels-range-field' value='' />
-                <format attr='has-stroke' value='false' />
                 <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='false' />
               </style-rule>
               <style-rule element='pane'>
                 <format attr='minwidth' value='-1' />
@@ -13616,6 +13633,97 @@
         <cols>[federated.09gjq1b0fabrje178pv6h1ha1en1].[__tableau_internal_object_id__].[cnt:mcd_df.csv_005FE202EA404A7C83CBC119DEE72C85:qk]</cols>
       </table>
       <simple-id uuid='{BA712EF1-43EF-4056-A6D1-07A02D8F8628}' />
+    </worksheet>
+    <worksheet name='Biggest Diff'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wordcloud' name='federated.09gjq1b0fabrje178pv6h1ha1en1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09gjq1b0fabrje178pv6h1ha1en1'>
+            <column caption='Minimum' datatype='real' name='[Calculation_5972687909839069184]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='min([value])' />
+            </column>
+            <column caption='Biggest Diff' datatype='real' name='[Calculation_5972687909839200258]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Minimum (copy)_5972687909839138817]-[Calculation_5972687909839069184]' />
+            </column>
+            <column caption='Menu Type' datatype='string' name='[Classification]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Menu Item]' role='dimension' type='nominal' />
+            <column caption='Maximum' datatype='real' name='[Minimum (copy)_5972687909839138817]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='max([value])' />
+            </column>
+            <column-instance column='[Classification]' derivation='Attribute' name='[attr:Classification:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Menu Item]' derivation='Attribute' name='[attr:Menu Item:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Classification]' derivation='None' name='[none:Classification:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Menu Item]' derivation='None' name='[none:Menu Item:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_5972687909839200258]' derivation='User' name='[usr:Calculation_5972687909839200258:qk]' pivot='key' type='quantitative' />
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[usr:Calculation_5972687909839200258:qk]' value='C18441%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' value='152' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' value='false' />
+            <format attr='display' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <tooltip column='[federated.09gjq1b0fabrje178pv6h1ha1en1].[attr:Menu Item:nk]' />
+              <tooltip column='[federated.09gjq1b0fabrje178pv6h1ha1en1].[attr:Classification:nk]' />
+              <text column='[federated.09gjq1b0fabrje178pv6h1ha1en1].[usr:Calculation_5972687909839200258:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Menu Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Menu Item:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Classification:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk] / [federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4D193E61-F7DA-4723-8299-3089636DE2F3}' />
     </worksheet>
     <worksheet name='Bus?'>
       <table>
@@ -13837,13 +13945,14 @@
         <style>
           <style-rule element='cell'>
             <format attr='width' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]' value='117' />
+            <format attr='text-format' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[attr:value:ok]' value='C18441%' />
           </style-rule>
           <style-rule element='header'>
             <format attr='width' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' value='152' />
           </style-rule>
           <style-rule element='label'>
-            <format attr='text-format' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[attr:value:ok]' value='C18441%' />
             <format attr='display' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]' value='false' />
+            <format attr='text-format' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[attr:value:ok]' value='C18441%' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='size-bar' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:sum:value:qk:2]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
@@ -13915,6 +14024,128 @@
         <cols>[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]</cols>
       </table>
       <simple-id uuid='{FE7D501D-049E-4ADE-9F3C-F7464C26A746}' />
+    </worksheet>
+    <worksheet name='Price Analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wordcloud' name='federated.09gjq1b0fabrje178pv6h1ha1en1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09gjq1b0fabrje178pv6h1ha1en1'>
+            <column caption='Menu Type' datatype='string' name='[Classification]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Menu Item]' role='dimension' type='nominal' />
+            <column-instance column='[value]' derivation='Avg' name='[avg:value:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Classification]' derivation='None' name='[none:Classification:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Menu Item]' derivation='None' name='[none:Menu Item:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variable]' derivation='None' name='[none:variable:nk]' pivot='key' type='nominal' />
+            <column-instance column='[value]' derivation='Sum' name='[rank:sum:value:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' rank-options='Competition,Ascending' type='Rank' />
+            </column-instance>
+            <column caption='Value' datatype='real' name='[value]' role='measure' type='quantitative' />
+            <column caption='Classification3' datatype='string' name='[variable]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]'>
+            <groupfilter function='level-members' level='[none:Menu Item:nk]' />
+          </filter>
+          <manual-sort column='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;School&quot;</bucket>
+              <bucket>&quot;Low&quot;</bucket>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Tourist&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]' value='117' />
+            <format attr='text-format' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:sum:value:qk:2]' value='C18441%' />
+            <format attr='text-format' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[avg:value:ok]' value='C18441%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' value='152' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]' value='false' />
+            <format attr='text-format' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[avg:value:ok]' value='C18441%' />
+            <format attr='text-format' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:sum:value:qk:2]' value='C18441%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:sum:value:qk:2]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:sum:value:qk:2]' num-steps='5' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#eedbd9</color>
+                <color>#ecc6c3</color>
+                <color>#eab1ac</color>
+                <color>#e79c96</color>
+                <color>#e58881</color>
+                <color>#e3746c</color>
+                <color>#e06157</color>
+                <color>#de4e43</color>
+                <color>#dc3b2f</color>
+                <color>#da291c</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:sum:value:qk:2]' />
+              <text column='[federated.09gjq1b0fabrje178pv6h1ha1en1].[avg:value:ok]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Menu Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Menu Item:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Classification:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]</rows>
+        <cols>[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:variable:nk]</cols>
+        <pages>
+          <column>[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{32A781C7-ADFD-4DAA-9DCE-44E15C639542}' />
     </worksheet>
     <worksheet name='Word Bar'>
       <table>
@@ -14094,7 +14325,11 @@
   </worksheets>
   <dashboards>
     <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='1'>
-      <style />
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='wrap' id='dash-text_72' value='on' />
+        </style-rule>
+      </style>
       <size sizing-mode='automatic' />
       <datasources>
         <datasource caption='wordcloud' name='federated.09gjq1b0fabrje178pv6h1ha1en1' />
@@ -14107,45 +14342,74 @@
       </datasource-dependencies>
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone h='97644' id='43' param='horz' type-v2='layout-flow' w='98504' x='748' y='1178'>
-            <zone h='97644' id='27' type-v2='layout-basic' w='98504' x='748' y='1178'>
-              <zone h='82916' id='7' param='horz' type-v2='layout-flow' w='98504' x='748' y='15906'>
-                <zone h='82916' id='5' type-v2='layout-basic' w='98504' x='748' y='15906'>
-                  <zone h='82916' id='3' name='Menu Price' show-title='false' w='98504' x='748' y='15906'>
-                    <zone-style>
-                      <format attr='border-color' value='#000000' />
-                      <format attr='border-style' value='none' />
-                      <format attr='border-width' value='0' />
-                      <format attr='margin' value='4' />
-                    </zone-style>
+          <zone h='90133' id='70' param='horz' type-v2='layout-flow' w='98504' x='748' y='8689'>
+            <zone h='90133' id='43' param='horz' type-v2='layout-flow' w='98504' x='748' y='8689'>
+              <zone h='90133' id='27' type-v2='layout-basic' w='98504' x='748' y='8689'>
+                <zone h='75993' id='7' param='horz' type-v2='layout-flow' w='98504' x='748' y='22829'>
+                  <zone h='75993' id='5' type-v2='layout-basic' w='98504' x='748' y='22829'>
+                    <zone h='75993' id='3' name='Menu Price' show-title='false' w='82507' x='748' y='22829'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='75993' id='77' name='Biggest Diff' show-title='false' w='15997' x='83255' y='22829'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
                   </zone>
                 </zone>
-              </zone>
-              <zone h='14728' id='26' name='Average Price' w='69037' x='30215' y='1178'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='6102' id='41' mode='checkdropdown' name='Menu Price' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]' type-v2='filter' values='database' w='29467' x='748' y='1178'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
-              </zone>
-              <zone h='8626' id='44' mode='checkdropdown' name='Menu Price' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' type-v2='filter' values='database' w='29467' x='748' y='7280'>
-                <zone-style>
-                  <format attr='border-color' value='#000000' />
-                  <format attr='border-style' value='none' />
-                  <format attr='border-width' value='0' />
-                  <format attr='margin' value='4' />
-                </zone-style>
+                <zone h='14140' id='26' name='Average Price' w='67259' x='31993' y='8689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='4351' id='41' mode='checkdropdown' name='Menu Price' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]' type-v2='filter' values='database' w='14032' x='748' y='8689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='4351' id='44' mode='checkdropdown' name='Menu Price' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' type-v2='filter' values='database' w='17213' x='14780' y='8689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='9789' id='71' name='Average Price' pane-specification-id='0' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:avg:value:qk]' type-v2='color' w='31245' x='748' y='13040'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
               </zone>
             </zone>
+          </zone>
+          <zone forceUpdate='true' h='7511' id='72' type-v2='text' w='98504' x='748' y='1178'>
+            <formatted-text>
+              <run fontcolor='#000000'>Every McDonald&apos;s belong in 1 of 5 categories. (i.e all the &quot;Medium&quot; McDonald&apos;s will be selling Big Mac Upsized Meals for $9.65)</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
           </zone>
           <zone-style>
             <format attr='border-color' value='#000000' />
@@ -14159,9 +14423,12 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97644' id='55' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
-                <zone fixed-size='110' h='14728' id='26' is-fixed='true' name='Average Price' w='69037' x='30215' y='1178'>
+            <zone h='100000' id='76' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='75' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+                <zone forceUpdate='true' h='7511' id='72' type-v2='text' w='98504' x='748' y='1178'>
+                  <formatted-text>
+                    <run fontcolor='#000000'>Every McDonald&apos;s belong in 1 of 5 categories. (i.e all the &quot;Medium&quot; McDonald&apos;s will be selling Big Mac Upsized Meals for $9.65)</run>
+                  </formatted-text>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14170,7 +14437,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='6102' id='41' mode='checkdropdown' name='Menu Price' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]' type-v2='filter' values='database' w='29467' x='748' y='1178'>
+                <zone fixed-size='105' h='14140' id='26' is-fixed='true' name='Average Price' w='67259' x='31993' y='8689'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14179,7 +14446,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='8626' id='44' mode='checkdropdown' name='Menu Price' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' type-v2='filter' values='database' w='29467' x='748' y='7280'>
+                <zone h='9789' id='71' name='Average Price' pane-specification-id='0' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:avg:value:qk]' type-v2='color' w='31245' x='748' y='13040'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14188,7 +14455,25 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='82916' id='3' is-fixed='true' name='Menu Price' show-title='false' w='98504' x='748' y='15906'>
+                <zone h='4351' id='41' mode='checkdropdown' name='Menu Price' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]' type-v2='filter' values='database' w='14032' x='748' y='8689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4351' id='44' mode='checkdropdown' name='Menu Price' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' type-v2='filter' values='database' w='17213' x='14780' y='8689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='75993' id='3' is-fixed='true' name='Menu Price' show-title='false' w='98504' x='748' y='22829'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14211,6 +14496,28 @@
       <simple-id uuid='{9EBEC327-BC98-4FA3-B40E-E54271F30855}' />
     </dashboard>
     <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{587E4BE9-5556-4A99-802F-DF850D54D6DA}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='3'>
       <style />
       <size sizing-mode='automatic' />
       <datasources>
@@ -14274,9 +14581,9 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='44' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='43' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
-                <zone h='4016' id='13' mode='dropdown' name='Map' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]' type-v2='filter' values='relevant' w='10603' x='88867' y='11892'>
+            <zone h='100000' id='60' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='59' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+                <zone h='7658' id='13' mode='dropdown' name='Map' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]' type-v2='filter' values='relevant' w='14967' x='84285' y='22680'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14285,7 +14592,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='4016' id='14' mode='dropdown' name='Map' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' type-v2='filter' values='relevant' w='10603' x='88867' y='15908'>
+                <zone h='7658' id='14' mode='dropdown' name='Map' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Classification:nk]' type-v2='filter' values='relevant' w='14967' x='84285' y='30338'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14294,7 +14601,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='98764' id='3' is-fixed='true' name='Map' show-title='false' w='88337' x='530' y='618'>
+                <zone fixed-size='280' h='97644' id='3' is-fixed='true' name='Map' show-title='false' w='83537' x='748' y='1178'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14303,7 +14610,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='11274' id='8' name='Map' pane-specification-id='0' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:classification:nk]' type-v2='color' w='10603' x='88867' y='618'>
+                <zone h='21502' id='8' name='Map' pane-specification-id='0' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:classification:nk]' type-v2='color' w='14967' x='84285' y='1178'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14325,7 +14632,7 @@
       </devicelayouts>
       <simple-id uuid='{058C038A-E322-4B87-892F-68733FD2BD5A}' />
     </dashboard>
-    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='3'>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='4'>
       <style />
       <size sizing-mode='automatic' />
       <datasources>
@@ -14411,9 +14718,9 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1350' minheight='1350' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='76' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='84000' id='75' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
-                <zone fixed-size='280' h='58096' id='3' is-fixed='true' name='Map' show-title='false' w='68032' x='248' y='618'>
+            <zone h='100000' id='92' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='91' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+                <zone fixed-size='280' h='57437' id='3' is-fixed='true' name='Map' show-title='false' w='67348' x='748' y='1178'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14422,7 +14729,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='23388' id='17' mode='checkdropdown' name='Word Cloud' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:F1:nk]' type-v2='filter' values='relevant' w='16095' x='8624' y='58714'>
+                <zone h='23122' id='17' mode='checkdropdown' name='Word Cloud' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:F1:nk]' type-v2='filter' values='relevant' w='15934' x='9039' y='58615'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14431,7 +14738,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='58096' id='9' is-fixed='true' name='Word Cloud' show-title='false' w='31472' x='68280' y='618'>
+                <zone fixed-size='280' h='57437' id='9' is-fixed='true' name='Word Cloud' show-title='false' w='31156' x='68096' y='1178'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14440,7 +14747,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='40668' id='11' name='Word Cloud' pane-specification-id='0' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:F1:nk]' type-v2='color' w='8376' x='248' y='58714'>
+                <zone h='40207' id='11' name='Word Cloud' pane-specification-id='0' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:F1:nk]' type-v2='color' w='8291' x='748' y='58615'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14449,7 +14756,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='40668' id='12' is-fixed='true' name='Bar Chart' show-title='false' w='30333' x='24719' y='58714'>
+                <zone fixed-size='280' h='40207' id='12' is-fixed='true' name='Bar Chart' show-title='false' w='30028' x='24973' y='58615'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14458,7 +14765,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone h='17280' id='42' name='Word Bar' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[__tableau_internal_object_id__].[cnt:wordcloud.csv_E6FE10F2EF3E4C03B32477E6B1398514:qk]' type-v2='filter' values='relevant' w='16095' x='8624' y='82102'>
+                <zone h='17085' id='42' name='Word Bar' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[__tableau_internal_object_id__].[cnt:wordcloud.csv_E6FE10F2EF3E4C03B32477E6B1398514:qk]' type-v2='filter' values='relevant' w='15934' x='9039' y='81737'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14467,7 +14774,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='40668' id='39' is-fixed='true' name='Word Bar' show-title='false' w='44700' x='55052' y='58714'>
+                <zone fixed-size='280' h='40207' id='39' is-fixed='true' name='Word Bar' show-title='false' w='44251' x='55001' y='58615'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -14495,12 +14802,53 @@
       <zones>
         <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
           <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
-            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
-            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
-            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='830' />
+            <zone h='87863' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='11307'>
               <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
-                  <story-point captured-sheet='' id='1' />
+                  <story-point caption='Wait, McDonald&apos;s prices are different?' captured-sheet='1' id='1'>
+                    <currentDeltas>
+                      <dashboard name='1'>
+                        <zone id='72'>
+                          <formatted-text>
+                            <run fontcolor='#000000'>Yes! Every McDonald&apos;s belong in</run>
+                            <run bold='true' fontcolor='#000000'> 1 of 5 categories</run>
+                            <run fontcolor='#000000'> across </run>
+                            <run bold='true' fontcolor='#000000'>the whole menu</run>
+                            <run fontcolor='#000000'>. </run>
+                            <run>Æ&#10;</run>
+                            <run fontcolor='#000000'>For example, all the &quot;Low&quot; McDonald&apos;s will be selling Upsized Meals of Big Mac 🍔 for $9.40 and 9pc Chicken McCrispy 🍗 for $9.85</run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </currentDeltas>
+                    <capturedDeltas>
+                      <dashboard name='1'>
+                        <zone id='72'>
+                          <formatted-text>
+                            <run fontcolor='#000000'>Yes! Every McDonald&apos;s belong in</run>
+                            <run bold='true' fontcolor='#000000'> 1 of 5 categories</run>
+                            <run fontcolor='#000000'> across </run>
+                            <run bold='true' fontcolor='#000000'>the whole menu</run>
+                            <run fontcolor='#000000'>. (i.e all the &quot;Low&quot; McDonald&apos;s will be selling Upsized Meals of Big Mac for $9.40 and 9pc Chicken McNuggets for $10)</run>
+                          </formatted-text>
+                        </zone>
+                      </dashboard>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Ok, but how do I know which McDonald&apos;s I&apos;m going to?' captured-sheet='3' id='2'>
+                    <capturedDeltas>
+                      <worksheet name='Map'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:latitude:qk]' field-type='quantitative' max='170051.12453613381' min='120365.39479856213' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:longitude:qk]' field-type='quantitative' max='11582033.481172811' min='11532770.863628756' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Story 3' captured-sheet='4' id='3' />
                 </story-points>
               </flipboard>
             </zone>
@@ -14517,15 +14865,26 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='dashboard' name='1'>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='4' />
+      <simple-id uuid='{B3390E4C-F3CF-4C54-B5C0-3FBF58B266D1}' />
+    </window>
+    <window class='dashboard' maximized='true' name='1'>
       <viewpoints>
         <viewpoint name='Average Price' />
+        <viewpoint name='Biggest Diff' />
         <viewpoint name='Menu Price' />
       </viewpoints>
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{B3B80CF3-7CE2-41BF-95FC-D6CABD6677C8}' />
     </window>
     <window class='dashboard' name='2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{58CF853E-348C-4B71-8FA6-2CC73EA1F778}' />
+    </window>
+    <window class='dashboard' name='3'>
       <viewpoints>
         <viewpoint name='Map'>
           <zoom type='entire-view' />
@@ -14534,7 +14893,7 @@
       <active id='3' />
       <simple-id uuid='{0AC84E6E-9FB9-4C7E-9FD0-A46A1F017FF5}' />
     </window>
-    <window class='dashboard' name='3'>
+    <window class='dashboard' name='4'>
       <viewpoints>
         <viewpoint name='Bar Chart' />
         <viewpoint name='Map'>
@@ -14570,6 +14929,56 @@
         </edge>
       </cards>
       <simple-id uuid='{D2627743-3860-4431-B715-E270BBCCC3C5}' />
+    </window>
+    <window class='worksheet' name='Biggest Diff'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A49BCC18-FCA9-45D1-8BD2-309B89CAF10B}' />
+    </window>
+    <window class='worksheet' name='Price Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]' type='filter' values='relevant' />
+            <card pane-specification-id='0' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[rank:sum:value:qk:2]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{750AB958-E527-4ECC-AC1A-AFF0484B57F7}' />
     </window>
     <window class='worksheet' name='Average Price'>
       <cards>
@@ -14720,11 +15129,6 @@
         </edge>
       </cards>
       <simple-id uuid='{3F6DE960-8FF4-47B0-8F18-0282893239BE}' />
-    </window>
-    <window class='dashboard' maximized='true' name='Story 1'>
-      <viewpoints />
-      <active id='-1' />
-      <simple-id uuid='{B3390E4C-F3CF-4C54-B5C0-3FBF58B266D1}' />
     </window>
   </windows>
 </workbook>

@@ -10,13 +10,12 @@ import pickle
 from geopy.distance import geodesic
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Predict McDonalds Price", page_icon='🍔', layout='wide', initial_sidebar_state='expanded')
+st.set_page_config(page_title="McDonald's Price Predictor", page_icon='🍔', layout='wide')
 st.title("🍔 Predict McDonald's Prices! 🍔")
 postal_code = st.text_input('Key in a Singapore Location or Postal Code', 'Bugis Village')
-st.caption('_the search might not work if you run more than 250 searches per min_')
 
 #######
-url = f"https://developers.onemap.sg/commonapi/search?searchVal={postal_code}&returnGeom=Y&getAddrDetails=N&pageNum=1"
+url = f"https://developers.onemap.sg/commonapi/search?searchVal={postal_code}&returnGeom=Y&getAddrDetails=Y&pageNum=1"
 data = requests.get(url).json()    
 latitude = data['results'][0]['LATITUDE']
 longitude = data['results'][0]['LONGITUDE']
@@ -24,7 +23,8 @@ longitude = data['results'][0]['LONGITUDE']
 latitude = float(latitude)
 longitude = float(longitude)
 searchval = data['results'][0]['SEARCHVAL']
-st.write(f'The location selected is {searchval} located at {latitude:.2f}, {longitude:.2f}')
+address = data['results'][0]['ADDRESS']
+st.write(f'The closest location based on the input selected is {searchval} located at {address}')
 
 # Load data
 distance_list = [2,1,0.5,0.2]
@@ -76,7 +76,6 @@ def single_traffic_count(lat, long, stop_df, bus_data, distance_list):
 
         # add it to the empty array
         to_df_array = np.append(to_df_array, mcd_array, axis=0)
-        print(f'Number of McDonalds done: {len(to_df_array)}')
         
         return to_df_array
 
@@ -108,14 +107,11 @@ def single_num_count(distance, latitude, longitude, hdb_df):
 hdb_data = []
 # Get the num_hdb feature data
 for i in distance_list[1:]:
-    print(f'This is the run for distance {i}km')
     
     # this function initiates the dataframe based on the length of mcd_df and then computes the number of X within the distance
     # the columns of the item to be counted must be 'latitude' and 'longitude'
-
     result = single_num_count(i,latitude, longitude,hdb_df)
     hdb_data.append(result)
-    print(f'Successfully finished for distance {i}km')
 
 a = coord_list[0][28]
 b = coord_list[0][378]
@@ -172,11 +168,12 @@ df = pd.read_excel('data/mcdonalds_prices.xlsx')
 # Display Results
 st.subheader('Result')
 st.write(f"If you owned a McDonald's here, you would set {top_result} prices. Here's some info to get started:")
+st.caption("_based on a 71% accuracy rate_")
 ######
 
 import streamlit.components.v1 as components
 def main():
-    html_temp = """<div class='tableauPlaceholder' id='viz1680175741167' style='position: relative'><noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='McDonaldsinSingapore&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1680175741167');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
-    components.html(html_temp, height=1000)
+    html_temp = """<div class='tableauPlaceholder' id='viz1680230843618' style='position: relative; overflow:auto;'><noscript><a href='#'><img alt='Story 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore_16802273308130&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='McDonaldsinSingapore_16802273308130&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore_16802273308130&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1680230843618');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
+    components.html(html_temp, height=1000,width=1200)
 if __name__ == "__main__":    
     main()
