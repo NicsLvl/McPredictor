@@ -18,19 +18,18 @@ st.set_page_config(page_title="McDonald's Price Predicor", page_icon='🍔', lay
 st.title("🍔 I'm Modeling It!")
 
 st.header("This website predicts prices of a McDonald's based on the location of the restaurant in SG.")
-
 def main():
     html_temp = """<div style='overflow: auto;-webkit-overflow-scrolling: touch;'>
-                    <div class='tableauPlaceholder' id='viz1680251349260' style='position: relative'><noscript><a href='#'><img alt='Story ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore_16802273308130&#47;Story&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='McDonaldsinSingapore_16802273308130&#47;Story' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore_16802273308130&#47;Story&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1680251349260');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1069px';vizElement.style.height='706px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                    <div class='tableauPlaceholder' id='viz1680360398682' style='position: relative'><noscript><a href='#'><img alt='Story ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore_16802273308130&#47;Story&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='McDonaldsinSingapore_16802273308130&#47;Story' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore_16802273308130&#47;Story&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1680360398682');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1090px';vizElement.style.height='847px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                     </div>"""
-    components.html(html_temp, height=800)
+    components.html(html_temp,height=900)
                 
 if __name__ == "__main__":    
     main()
 
 st.header("Predictions")
-st.subheader("If you were to setup a McDonald's in Singapore, how should you price the burgers?")
-postal_code = st.text_input('Key in a Singapore Location or Postal Code', 'Bugis Village')
+st.subheader("If you were to setup a McDonald's anywhere in Singapore, how should you price the menu?")
+postal_code = st.text_input('Key in a Singapore Location or Postal Code', 'Senja Hawker Centre 677632')
 
 with st.spinner(text="Prediction in progress..."):
     time.sleep(1)
@@ -201,11 +200,25 @@ try:
     test = test.reshape(1,-1)
 
     top_result = RF.predict(test)[0]
-    df = pd.read_excel('data/mcdonalds_prices.xlsx')
+    # df = pd.read_excel('data/mcdonalds_prices_new.xlsx')
     
     st.success(f"If you owned a McDonald's here, you would set {top_result.upper()} prices.")
     ######
     st.caption("_predictions are based on a 71% accuracy rate without 'Tourist' or 'School'. Read more about how the model works on Github_")
+    
+    # # select only big mac upsized meal from df
+    # filtered_df = df[df['variable']==top_result]
+    # bm = filtered_df[filtered_df['Classification']=='Upsized Meal']
+    # big_mac = bm[bm['Menu Item']=='Big Mac']
+    # big_mac = big_mac['value'].values[0]
+    # print(big_mac)
+
+    # ff = bm[bm['Menu Item']=='Chicken McCrispy (2pc)']
+    # ff = ff['value'].values[0]
+
+    # st.write(f'Big Mac Upsized Meal: ${big_mac} 🍔🍟🥤')
+    # st.write(f'2pc Chicken McCrispy Upsized Meal: ${ff} 🍗🍗🍟🥤')
+
 except:
     st.write('Please try to enter a valid Singapore location or postal code')
     st.stop()
