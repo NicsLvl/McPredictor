@@ -15,7 +15,7 @@ from streamlit_folium import folium_static
 from folium.plugins import MarkerCluster
 
 st.set_page_config(page_title="McDonald's Price Predicor", page_icon='🍔', layout='wide')
-st.title("🍔 I'm Modeling It! _(and Lovin' It!)_")
+st.title("🍔 I'm Modeling It!")
 
 st.header("This website predicts prices of a McDonald's based on the location of the restaurant in SG.")
 
