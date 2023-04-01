@@ -13,7 +13,7 @@ import time
 import streamlit.components.v1 as components
 
 st.set_page_config(page_title="McDonald's Price Predicor", page_icon='🍔', layout='wide')
-st.title("I'm Modeling It! _(and Lovin' It!)_")
+st.title("🍔 I'm Modeling It! _(and Lovin' It!)_")
 
 st.header("This website predicts prices of a McDonald's based on the location of the restaurant in SG.")
 
