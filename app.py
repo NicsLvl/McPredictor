@@ -201,7 +201,7 @@ try:
     top_result = RF.predict(test)[0]
     # df = pd.read_excel('data/mcdonalds_prices_new.xlsx')
     
-    st.success(f"If you owned a McDonald's here, you would set {top_result.upper()} prices.")
+    st.success(f"If you owned a McDonald's here, you should set {top_result.upper()} prices.")
     ######
     st.caption("_predictions are based on a 71% accuracy rate without 'Tourist' or 'School'. Read more about how the model works on Github_")
     
