@@ -42,7 +42,7 @@
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0qz1lmv1wo29c21c5wdmc0w9uhod' name='Sheet1' table='[Sheet1$]' type='table'>
-          <columns gridOrigin='A1:E642:no:A1:E642:0' header='yes' outcome='2'>
+          <columns gridOrigin='A1:E641:no:A1:E641:0' header='yes' outcome='2'>
             <column datatype='string' name='Classification' ordinal='0' />
             <column datatype='string' name='Menu Item' ordinal='1' />
             <column datatype='string' name='variable' ordinal='2' />
@@ -462,7 +462,7 @@
             </columns>
           </relation>
           <relation connection='excel-direct.0qz1lmv1wo29c21c5wdmc0w9uhod' name='Sheet1' table='[Sheet1$]' type='table'>
-            <columns gridOrigin='A1:E642:no:A1:E642:0' header='yes' outcome='2'>
+            <columns gridOrigin='A1:E641:no:A1:E641:0' header='yes' outcome='2'>
               <column datatype='string' name='Classification' ordinal='0' />
               <column datatype='string' name='Menu Item' ordinal='1' />
               <column datatype='string' name='variable' ordinal='2' />
@@ -991,8 +991,8 @@
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <attributes>
-              <attribute datatype='integer' name='context'>2</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:E642:no:A1:E642:0&quot;</attribute>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E641:no:A1:E641:0&quot;</attribute>
               <attribute datatype='boolean' name='header'>true</attribute>
               <attribute datatype='integer' name='outcome'>2</attribute>
             </attributes>
@@ -12571,7 +12571,7 @@
               <family>Sheet1</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>8</approx-count>
+              <approx-count>7</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
             </metadata-record>
@@ -12585,7 +12585,7 @@
               <family>Sheet1</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>72</approx-count>
+              <approx-count>71</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
             </metadata-record>
@@ -12599,7 +12599,7 @@
               <family>Sheet1</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>6</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
             </metadata-record>
@@ -12626,7 +12626,7 @@
               <family>Sheet1</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>68</approx-count>
+              <approx-count>69</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RSG_S2' />
             </metadata-record>
@@ -13083,7 +13083,7 @@
           <object caption='Prices' id='Sheet1_9CB12868C39F436AB37E55B0B75D9780'>
             <properties context=''>
               <relation connection='excel-direct.0qz1lmv1wo29c21c5wdmc0w9uhod' name='Sheet1' table='[Sheet1$]' type='table'>
-                <columns gridOrigin='A1:E642:no:A1:E642:0' header='yes' outcome='2'>
+                <columns gridOrigin='A1:E641:no:A1:E641:0' header='yes' outcome='2'>
                   <column datatype='string' name='Classification' ordinal='0' />
                   <column datatype='string' name='Menu Item' ordinal='1' />
                   <column datatype='string' name='variable' ordinal='2' />
