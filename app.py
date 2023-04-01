@@ -10,7 +10,9 @@ import pickle
 from geopy.distance import geodesic
 import streamlit.components.v1 as components
 import time
-import streamlit.components.v1 as components
+import folium
+from streamlit_folium import folium_static
+from folium.plugins import MarkerCluster
 
 st.set_page_config(page_title="McDonald's Price Predicor", page_icon='🍔', layout='wide')
 st.title("🍔 I'm Modeling It! _(and Lovin' It!)_")
@@ -44,6 +46,15 @@ try:
     searchval = data['results'][0]['SEARCHVAL']
     address = data['results'][0]['ADDRESS']
     st.write(f'The closest location based on the input selected is {searchval} located at {address}')
+    
+    # Initialize the map with the given coordinates
+    m = folium.Map(location=[latitude, longitude], zoom_start=15)
+
+    # Add a marker at the given coordinates
+    folium.Marker([latitude, longitude]).add_to(m)
+
+    # Display the map in Streamlit
+    folium_static(m)
 
 except:
     st.write('Please try to enter a valid Singapore location or postal code')
