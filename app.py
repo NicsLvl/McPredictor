@@ -27,8 +27,7 @@ def main():
 if __name__ == "__main__":    
     main()
 
-st.header("Predictions")
-st.subheader("If you were to setup a McDonald's anywhere in Singapore, how should you price the menu?")
+st.header("If you were to setup a McDonald's anywhere in Singapore, how should you price the menu?")
 postal_code = st.text_input('Key in a Singapore Location or Postal Code', 'Senja Hawker Centre 677632')
 
 with st.spinner(text="Prediction in progress..."):
