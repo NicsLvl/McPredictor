@@ -16716,8 +16716,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='348' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97644' id='347' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+            <zone h='100000' id='350' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='349' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
                 <zone forceUpdate='true' h='6185' id='47' type-v2='text' w='98504' x='748' y='1178'>
                   <formatted-text>
                     <run>If you absolutely don&apos;t care which McDonald&apos;s you walk into, when you order a Meal, the price difference between the highest and lowest order compared to the average is mostly going to be less compared to Ala Carte. So  get some fries🍟 to go along!</run>
@@ -16851,8 +16851,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='236' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97644' id='235' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+            <zone h='100000' id='238' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='237' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
                 <zone fixed-size='280' h='80590' id='3' is-fixed='true' name='Morning Tap In Traffic' w='49252' x='748' y='7952'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -17011,8 +17011,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='387' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97644' id='386' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+            <zone h='100000' id='389' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='388' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
                 <zone forceUpdate='true' h='12417' id='67' type-v2='text' w='98504' x='748' y='1178'>
                   <formatted-text>
                     <run fontcolor='#000000'>Yes! Every McDonald&apos;s in Singapore belongs in </run>
@@ -17201,8 +17201,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='402' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97644' id='401' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+            <zone h='100000' id='404' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='403' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
                 <zone forceUpdate='true' h='14430' id='72' type-v2='text' w='98504' x='748' y='1178'>
                   <formatted-text>
                     <run fontcolor='#000000'>Yes! Every McDonald&apos;s in Singapore belongs in </run>
@@ -17366,8 +17366,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='68' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97644' id='67' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+            <zone h='100000' id='70' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='69' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
                 <zone forceUpdate='true' h='11340' id='34' type-v2='text' w='98504' x='748' y='1178'>
                   <formatted-text>
                     <run fontcolor='#000000'>123 out of 144 of the nearest different McDonald&apos;s belong in different subzones</run>
@@ -17506,8 +17506,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='231' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97644' id='230' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+            <zone h='100000' id='233' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='232' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
                 <zone fixed-size='280' h='97644' id='12' is-fixed='true' name='Subzone' show-title='false' w='40978' x='748' y='1178'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -17637,8 +17637,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='427' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97644' id='426' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+            <zone h='100000' id='429' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='428' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
                 <zone h='9278' id='268' mode='dropdown' name='Actual' param='[federated.09gjq1b0fabrje178pv6h1ha1en1].[none:Menu Item:nk]' type-v2='filter' values='database' w='49248' x='748' y='78645'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -17772,8 +17772,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97644' id='30' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97644' id='32' param='vert' type-v2='layout-flow' w='98504' x='748' y='1178'>
                 <zone forceUpdate='true' h='17231' id='3' type-v2='text' w='38822' x='748' y='1178'>
                   <formatted-text>
                     <run fontcolor='#000000'>Since we can see what are some possible factors that correlate with a McDonald&apos;s category, let&apos;s try to predict what the island would look like if it was filled with McDonald&apos;s</run>
@@ -18033,12 +18033,12 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='dashboard' name='Story'>
+    <window class='dashboard' maximized='true' name='Story'>
       <viewpoints />
       <active id='-1' />
       <simple-id uuid='{B3390E4C-F3CF-4C54-B5C0-3FBF58B266D1}' />
     </window>
-    <window class='dashboard' maximized='true' name='McMap'>
+    <window class='dashboard' name='McMap'>
       <viewpoints>
         <viewpoint name='Actual'>
           <zoom type='entire-view' />
