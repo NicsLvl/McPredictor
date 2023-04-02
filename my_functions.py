@@ -426,4 +426,4 @@ class Model:
 
         plt.show()
   
-        return grid
+        return grid, y_pred, y_test, X_test

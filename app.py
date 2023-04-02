@@ -149,53 +149,34 @@ try:
         result = single_num_count(i,latitude, longitude,hdb_df)
         hdb_data.append(result)
 
-    a = coord_list[0][28]
-    b = coord_list[0][378]
-    c = coord_list[0][26]
-    d = coord_list[0][194]
-    e = coord_list[0][22]
-    f = coord_list[0][286]
-    g = coord_list[0][122]
-    h = sz_income
-    i = coord_list[0][142]
-    j = coord_list[0][277]
-    k = coord_list[0][281]
-    l = sz_pop
-    m = hdb_data[0]
-    n = coord_list[0][100]
-    o = coord_list[0][130]
-    p = coord_list[0][285]
-    q = coord_list[0][138]
-    r = coord_list[0][108]
-    s = coord_list[0][374]
-    t = coord_list[0][118]
-    u = coord_list[0][381]
-    v = coord_list[0][289]
+    a = coord_list[0][281]
+    b = coord_list[0][194]
+    c = coord_list[0][4]
+    d = coord_list[0][290]
+    e = coord_list[0][134]
+    f = hdb_data[0]
+    g = coord_list[0][100]
+    h = coord_list[0][292]
+    i = coord_list[0][298]
+    j = coord_list[0][278]
+    k = sz_pop
+    l = coord_list[0][287]
+    m = coord_list[0][378]
+    n = coord_list[0][282]
+    o = coord_list[0][108]
+    p = coord_list[0][5]
+    q = sz_density
+    r = coord_list[0][289]
+    s = hdb_data[2]
+    t = hdb_data[1]
+    u = coord_list[0][138]
+    v = coord_list[0][382]
     w = coord_list[0][299]
-    x = coord_list[0][382]
-    y = coord_list[0][298]
-    z = coord_list[0][292]
-    aa = coord_list[0][42]
-    ab = coord_list[0][282]
-    ac = coord_list[0][24]
-    ad = coord_list[0][274]
-    ae = coord_list[0][193]
-    af = sz_density
-    ag = coord_list[0][5]
-    ah = coord_list[0][293]
-    ai = coord_list[0][4]
-    aj = coord_list[0][302]
-    ak = coord_list[0][196]
-    al = hdb_data[2]
-    am = coord_list[0][377]
-    an = coord_list[0][129]
-    ao = coord_list[0][278]
-    ap = hdb_data[1]
-    aq = coord_list[0][290]
-    ar = coord_list[0][132]
+    x = sz_income
+    y = coord_list[0][193]
 
     # combined all the letters into an array for machine learning predicting 
-    test = np.array([a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,aa,ab,ac,ad,ae,af,ag,ah,ai,aj,ak,al,am,an,ao,ap,aq,ar])
+    test = np.array([a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y])
     test = test.reshape(1,-1)
 
     top_result = RF.predict(test)[0]
@@ -203,7 +184,7 @@ try:
     
     st.success(f"If you owned a McDonald's here, you should set {top_result.upper()} prices.")
     ######
-    st.caption("_predictions are based on a 71% accuracy rate without 'Tourist' or 'School'. Read more about how the model works on Github_")
+    st.caption("_predictions are based on a 69% accuracy rate without 'Tourist' or 'School'. Read more about how the model works on Github_")
     
     # # select only big mac upsized meal from df
     # filtered_df = df[df['variable']==top_result]
