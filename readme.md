@@ -22,13 +22,13 @@ To address the imbalanced data problem, we:
 Files
 
 ## Files
-mcd.ipynb: The main notebook used to explore our model and data
-graphics.twbx: The accompanying Tableau story for data visualization and dashboard
-my_functions.py: Custom functions built for feature engineering and the notebook
-app.py: Python file used for our Streamlit demo, available [here](https://nicslvl-mcpredictor-app-6qi9oo.streamlit.app)
-postal_codes.ipynb: A notebook used to predict random postal codes around Singapore based on our trained model
-random.ipynb: A notebook used for testing app.py before Streamlit deployment
-requirements.txt: Required Python libraries to run the code
-/pickles: Stored pickles used for app.py
-/images: Image files used for graphics.twbx
-/data: All the data used and output generated are stored in this folder
+- mcd.ipynb: The main notebook used to explore our model and data
+- graphics.twbx: The accompanying Tableau story for data visualization and dashboard
+- my_functions.py: Custom functions built for feature engineering and the notebook
+- app.py: Python file used for our Streamlit demo, available [here](https://nicslvl-mcpredictor-app-6qi9oo.streamlit.app)
+- postal_codes.ipynb: A notebook used to predict random postal codes around Singapore based on our trained model
+- random.ipynb: A notebook used for testing app.py before Streamlit deployment
+- requirements.txt: Required Python libraries to run the code
+- /pickles: Stored pickles used for app.py
+- /images: Image files used for graphics.twbx
+- /data: All the data used and output generated are stored in this folder
