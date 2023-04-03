@@ -24,6 +24,9 @@ To address the imbalanced data problem, we:
 - Use balanced subsamples when training the Random Forest / Oversample using SMOTE for other classification techniques
 Files
 
+## Special Thanks
+[This](https://www.reddit.com/r/singapore/comments/zopida/price_of_a_big_mac_meal_across_singapore/) reddit post for enlightening me that there are price differences in the first place.
+
 ## Files
 - mcd.ipynb: The main notebook used to explore our model and data
 - graphics.twbx: The accompanying Tableau story for data visualization and dashboard
