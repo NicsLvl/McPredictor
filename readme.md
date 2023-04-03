@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project aims to predict McDonald's pricing across the entirety of Singapore using only location data. McDonald's prices their products (differently)[https://nicslvl-mcpredictor-app-6qi9oo.streamlit.app] across the island. We hypothesize that there are economic reasons behind this strategy, which other F&B providers can potentially take reference from.
+This project aims to predict McDonald's pricing across the entirety of Singapore using only location data. McDonald's prices their products [differently](https://nicslvl-mcpredictor-app-6qi9oo.streamlit.app) across the island. We hypothesize that there are economic reasons behind this strategy, which other F&B providers can potentially take reference from.
 
 ## Data
 The main Python notebook mcd.ipynb consists of the following sections:
@@ -25,7 +25,7 @@ Files
 mcd.ipynb: The main notebook used to explore our model and data
 graphics.twbx: The accompanying Tableau story for data visualization and dashboard
 my_functions.py: Custom functions built for feature engineering and the notebook
-app.py: Python file used for our Streamlit demo, available (here)[https://nicslvl-mcpredictor-app-6qi9oo.streamlit.app]
+app.py: Python file used for our Streamlit demo, available [here](https://nicslvl-mcpredictor-app-6qi9oo.streamlit.app)
 postal_codes.ipynb: A notebook used to predict random postal codes around Singapore based on our trained model
 random.ipynb: A notebook used for testing app.py before Streamlit deployment
 requirements.txt: Required Python libraries to run the code
