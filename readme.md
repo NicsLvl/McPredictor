@@ -7,7 +7,7 @@ This project aims to predict McDonald's pricing across the entirety of Singapore
 There is also a site deployed that explains everything [here](https://nicslvl-mcpredictor-app-6qi9oo.streamlit.app)
 [![Video Thumbnail](images/thumbnail.png)](https://youtu.be/MsIbVjlm6RE "Watch the Demo Video!")
 
-## Data
+## Data Exploration
 The main Python notebook mcd.ipynb consists of the following sections:
 
 ### Exploring McDonald's in Singapore
