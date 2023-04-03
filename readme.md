@@ -32,6 +32,7 @@ Files
 - postal_codes.ipynb: A notebook used to predict random postal codes around Singapore based on our trained model
 - random.ipynb: A notebook used for testing app.py before Streamlit/site deployment
 - requirements.txt: Required Python libraries to run the code
+- McPredictor Github.pdf: Non-technical presentation
 - /pickles: Stored pickles used for app.py
 - /images: Image files used for graphics.twbx
 - /data: All the data used and output generated are stored in this folder
