@@ -4,7 +4,7 @@
 
 This project aims to predict McDonald's pricing across the entirety of Singapore using only location data. McDonald's prices their products [differently](https://nicslvl-mcpredictor-app-6qi9oo.streamlit.app) across the island. We hypothesize that there are economic reasons behind this strategy, which other F&B providers can potentially take reference from.
 
-[![Video Thumbnail]](https://youtu.be/MsIbVjlm6RE)
+[![Video Thumbnail](images/thumbnail.png)](https://youtu.be/MsIbVjlm6RE)
 
 ## Data
 The main Python notebook mcd.ipynb consists of the following sections:
