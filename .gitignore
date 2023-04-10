@@ -13,3 +13,51 @@ Report.docx
 DAI Capstone.pptx
 DAI Capstone Part II.pptx
 McPredictor.pdf
+
+# Python and Streamlit cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc.og
+*.egg-info/
+dist/
+build/
+*.egg
+*.eggs/
+.eggs/
+
+# Streamlit cache
+.streamlit/
+
+# Environment and configuration files
+.env
+.env.local
+*.ini
+/myenv
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux files
+*~
+.directory
+.Trash-*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak

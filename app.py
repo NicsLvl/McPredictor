@@ -23,9 +23,23 @@ def main():
                     <div class='tableauPlaceholder' id='viz1680360398682' style='position: relative'><noscript><a href='#'><img alt='Story ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore_16802273308130&#47;Story&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='McDonaldsinSingapore_16802273308130&#47;Story' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mc&#47;McDonaldsinSingapore_16802273308130&#47;Story&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1680360398682');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1090px';vizElement.style.height='847px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                     </div>"""
     components.html(html_temp,height=900)
-                
+
+def main2():
+    html = """<!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CVHVXNS01"></script>
+                <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-5CVHVXNS01');
+                </script>"""
+    components.html(html, height = 100)
+
 if __name__ == "__main__":    
     main()
+    main2()
+
 
 st.header("If you were to setup a McDonald's anywhere in Singapore, how should you price the menu?")
 postal_code = st.text_input('Key in a Singapore Location or Postal Code', 'Senja Hawker Centre 677632')
