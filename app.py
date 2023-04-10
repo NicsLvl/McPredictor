@@ -185,7 +185,8 @@ try:
     st.success(f"If you owned a McDonald's here, you should set {top_result.upper()} prices.")
     ######
     st.caption("_predictions are based on a 69% accuracy rate without 'Tourist' or 'School'. Read more about how the model works on Github_")
-    
+    st.markdown("[View my GitHub Repository](https://github.com/NicsLvl/McPredictor)")
+
     # # select only big mac upsized meal from df
     # filtered_df = df[df['variable']==top_result]
     # bm = filtered_df[filtered_df['Classification']=='Upsized Meal']
@@ -201,4 +202,5 @@ try:
 
 except:
     st.write('Please try to enter a valid Singapore location or postal code')
+    st.markdown("[View my GitHub Repository](https://github.com/NicsLvl/McPredictor)")
     st.stop()
