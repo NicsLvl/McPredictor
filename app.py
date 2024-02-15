@@ -48,7 +48,8 @@ with st.spinner(text="Prediction in progress..."):
     time.sleep(1)
 #######
 try:
-    url = f"https://developers.onemap.sg/commonapi/search?searchVal={postal_code}&returnGeom=Y&getAddrDetails=Y&pageNum=1"
+    # url = f"https://developers.onemap.sg/commonapi/search?searchVal={postal_code}&returnGeom=Y&getAddrDetails=Y&pageNum=1"
+    url = f"https://www.onemap.gov.sg/api/common/elastic/search?searchVal={postal_code}&returnGeom=Y&getAddrDetails=Y&pageNum=1"
     data = requests.get(url).json()    
     latitude = data['results'][0]['LATITUDE']
     longitude = data['results'][0]['LONGITUDE']
