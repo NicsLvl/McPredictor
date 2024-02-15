@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project aims to predict McDonald's pricing across the entirety of Singapore using only location data. McDonald's prices their products differently across the island. We hypothesize that there are economic reasons behind this strategy, which other F&B providers can potentially take reference from.
+This project aims to predict McDonald's pricing across the entirety of Singapore using only location data. McDonald's prices their products differently across the island. We hypothesize that there are economic reasons behind this strategy, which other F&B providers can potentially take reference from. Prices and data are from Jan 2023 to Mar 2023.
 
 There is also a site deployed that showcases everything [here](https://nicslvl-mcpredictor-app-6qi9oo.streamlit.app)
 [![Video Thumbnail](images/thumbnail.png)](https://youtu.be/MsIbVjlm6RE "Watch the Demo Video!")
